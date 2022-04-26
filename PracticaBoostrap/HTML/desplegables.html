@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Practica Boostrap</title>
+    <link rel="stylesheet" href="/CSS/styleDesplegable.css">
+    <link rel="icon" href="/IMG/bootstrap-logo.png">
+    <!--Boostrap-->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <!--Menu superior-->
+    <section class="bordeMenu">
+        <ul class="nav">
+            <li>
+                <img src="/IMG/bootstrap-logo.png" width="50px">
+            </li>
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" style="color:white" href="#">Casa</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#" style="color:white">Docs</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#" style="color:white">Ejemplos</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#" style="color:white">Iconos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color:white">Temas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color:white">Blog</a>
+            </li>
+        
+        <div class="derechaMenu">
+            <a href="https://github.com/twbs" style="color:rgb(203, 152, 251)">
+                <svg xmlns="http://www.w3.org/2000/svg" style="color:black" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+            </a>
+            <a href="https://twitter.com/getbootstrap" style="color:rgb(203, 152, 251)">
+                <svg xmlns="http://www.w3.org/2000/svg" style="color:black" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                </svg>
+            </a>
+            <a href="https://bootstrap-slack.herokuapp.com/" style="color:rgb(203, 152, 251)">
+                <svg xmlns="http://www.w3.org/2000/svg" style="color:black" width="16" height="16" fill="currentColor" class="bi bi-hash" viewBox="0 0 16 16">
+                    <path d="M8.39 12.648a1.32 1.32 0 0 0-.015.18c0 .305.21.508.5.508.266 0 .492-.172.555-.477l.554-2.703h1.204c.421 0 .617-.234.617-.547 0-.312-.188-.53-.617-.53h-.985l.516-2.524h1.265c.43 0 .618-.227.618-.547 0-.313-.188-.524-.618-.524h-1.046l.476-2.304a1.06 1.06 0 0 0 .016-.164.51.51 0 0 0-.516-.516.54.54 0 0 0-.539.43l-.523 2.554H7.617l.477-2.304c.008-.04.015-.118.015-.164a.512.512 0 0 0-.523-.516.539.539 0 0 0-.531.43L6.53 5.484H5.414c-.43 0-.617.22-.617.532 0 .312.187.539.617.539h.906l-.515 2.523H4.609c-.421 0-.609.219-.609.531 0 .313.188.547.61.547h.976l-.516 2.492c-.008.04-.015.125-.015.18 0 .305.21.508.5.508.265 0 .492-.172.554-.477l.555-2.703h2.242l-.515 2.492zm-1-6.109h2.266l-.515 2.563H6.859l.532-2.563z"/>
+                </svg>
+            </a>
+            <a href="https://opencollective.com/bootstrap" style="color:rgb(203, 152, 251)">
+                <svg xmlns="http://www.w3.org/2000/svg" style="color:black" width="16" height="16" fill="currentColor" class="bi bi-record-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                </svg>
+            </a>
+            <button type="button" class="btn btn-outline-warning">Descargar</button>
+        </div>
+        </ul>
+    </section>
+
+    <!--Sección de abajo del menu-->
+    <section class="menuBajoMenu">
+        <!--Buscador de la izquierda-->
+        <nav class="navbar navbar-light">
+            <div class="container-fluid">
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Control+/</button>
+            </form>
+            
+            <!--Boton de la derecha-->
+            <form class="d-flex">
+              <div class="btn-group" role="group" >
+                <button id="btnGroupDrop1" type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Boostrap v5.1</button>
+                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <li><a class="dropdown-item" href="#">Ultima (5.1.x)</a></li>
+                  <li><a class="dropdown-item" href="#">v4.6.x</a></li>
+                  <li><a class="dropdown-item" href="#">v3.4.1</a></li>
+                  <li><a class="dropdown-item" href="#">v2.3.2</a></li>
+                </ul>
+              </div>
+            </form>
+            </div> 
+          </nav>
+    </section>
+
+    <!--menu de la izquierda-->
+    <aside class="izquierdaMenu sticky-top">
+        <div class="btn-group" role="button" >
+            <li id="btnGroupDrop1"  class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Componentes</li>
+            <ul class="dropdown-menu list-group-flush">
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/index.html">Botones</a></li><!--si.les falta un poco-->
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/navsAndTabs.html">Navegadores y pestañas</a></li><!--si con errores-->
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/cargadores.html">Cargadores</a></li><!--si con errores-->
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/progreso.html">Progreso</a></li><!--si con errores-->
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/modal.html">Modal</a></li> <!--si con errores-->
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/desplegables.html">Desplegable</a></li>
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/navRecientes.html">Navegadores Recientes</a></li>
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/badejEntr.html">Bandeja de Entrada</a></li>
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/carrusel.html">Marcadores de Posición</a></li>
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/listaDeGrupos.html">Fuera del lienzo</a></li>
+              </ul>
+        </div>
+    </aside>
+
+    <!--El recuardo de la derecha-->
+    <aside class="derechaAside sticky-top">
+        <ul>
+            <li class="list-group nav-link" style="color:rgb(110, 110, 110)"><u>En esta pagina</u></li>
+            <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110)" href="#infGern">Información general</a></li>
+            <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110)" href="#acces">Accesibilidad</a></li>
+            <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110)" href="#ejem">Ejemplos</a></li>
+            <ul>
+                <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110)" href="#btnSimp">Botón Simple</a></li>
+                <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110)" href="#btnDiv">Botón dividir</a></li>
+            </ul>   
+            <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110)" href="#dimensi">Dimensionamiento</a></li>
+            <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110)" href="#menDesObs">Menús desplegables oscuros</a></li>
+            <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110) " href="#direct">Dirección</a></li>
+            <ul>
+                <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110) " href="#caerhast">Caer hasta</a></li>
+                <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110) " href="#gotDer">Gota a la derecha</a></li>
+                <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110) " href="#gotIzq">Gota a la izquierda</a></li>
+            </ul> 
+            <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110) " href="#opMenu">Opción del menú</a></li>
+            <ul>
+                <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110) " href="#act">Activar</a></li>
+                <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110) " href="#dis">Discapacitado</a></li>
+            </ul>
+            <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110) " href="#aliMenu">Alineación del menu</a></li>
+            <ul>
+                <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110) " href="#aliRes">Alineación receptiva</a></li>
+                <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110) " href="#aliOps">Alineación Opcional</a></li>
+            </ul>
+            <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110) " href="#contMenu">Contenido del menu</a></li>
+            <ul>
+                <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110) " href="#encab">Encabezados</a></li>
+                <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110) " href="#divisores">Divisores</a></li>
+                <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110) " href="#text">Texto</a></li>
+                <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110) " href="#formular">Formularios</a></li>
+            </ul> 
+            <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110) " href="#opDesplega">Opciones desplegables</a></li> 
+            <ul>
+                <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110) " href="#compCieAut">Comportamiento de cierre automático</a></li> 
+            </ul>
+        </ul>
+    </aside>
+
+    <!--Aqui termina la base de la página-->
+
+    <!--Desplegables-->
+    <section class="infCentro">
+        <h2>Desplegable</h2>
+        <p>Alterne las superposiciones contextuales para mostrar listas de enlaces y más con el complemento desplegable Bootstrap.</p>
+
+        <br>
+        <h4 id="infGern">Información general</h4>
+        <p>Los menús desplegables se basan en una biblioteca de terceros, Popper, que proporciona posicionamiento dinámico y detección 
+            de ventana gráfica. Asegúrese de incluir popper.min.js antes del JavaScript de Bootstrap o use bootstrap.bundle.min.js / 
+            bootstrap.bundle.js que contiene Popper. Popper no se usa para posicionar los menús desplegables en las barras de navegación, 
+            ya que no se requiere un posicionamiento dinámico.
+        </p>
+
+        <br>
+        <h4 id="acces">Accesibilidad</h4>
+        <p>El estándar WAI ARIA define un widget role="menu" real, pero esto es específico para menús similares a aplicaciones que 
+            desencadenan acciones o funciones. Los menús de ARIA solo pueden contener elementos de menú, elementos de menú de 
+            casillas de verificación, elementos de menú de botones de opción, grupos de botones de opción y submenús.
+
+            Los menús desplegables de Bootstrap, por otro lado, están diseñados para ser genéricos y aplicables a una variedad 
+            de situaciones y estructuras de marcado. Por ejemplo, es posible crear menús desplegables que contengan entradas 
+            adicionales y controles de formulario, como campos de búsqueda o formularios de inicio de sesión. Por esta razón, 
+            Bootstrap no espera (ni agrega automáticamente) ninguno de los atributos de rol y aria requeridos para los menús 
+            ARIA verdaderos. Los autores tendrán que incluir ellos mismos estos atributos más específicos.
+            
+            Sin embargo, Bootstrap agrega soporte incorporado para la mayoría de las interacciones estándar del menú del teclado, 
+            como la capacidad de moverse a través de elementos individuales .dropdown-item usando las teclas del cursor y cerrar 
+            el menú con la tecla ESC.
+        </p>
+
+        <br>
+        <h4 id="ejem">Ejemplos</h4>
+        <p>Envuelva el conmutador del menú desplegable (su botón o enlace) y el menú desplegable dentro de .dropdown, u otro 
+            elemento que declare la posición: relativa;. Los menús desplegables se pueden activar desde los elementos < a> o 
+            < button> para adaptarse mejor a sus necesidades potenciales. Los ejemplos que se muestran aquí usan elementos 
+            semánticos < ul> cuando corresponde, pero se admite el marcado personalizado. 
+        </p>
+
+        <br>
+        <h4 id="btnSimp">Botón simple</h4>
+        <p>Cualquier .btn individual se puede convertir en un menú desplegable con algunos cambios de marcado. Así es como puede 
+            ponerlos a trabajar con cualquiera de los elementos < button>:
+        </p>
+        <div class="particionesCentro">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Botón desplegable
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Acción</a></li>
+                  <li><a class="dropdown-item" href="#">Otra Acción</a></li>
+                  <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
+                </ul>
+              </div>
+        </div>
+        <p>Y con elementos < a>:</p>
+        <div class="particionesCentro">
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  Enlace desplegable
+                </a>
+              
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Acción</a></li>
+                  <li><a class="dropdown-item" href="#">Otra acción</a></li>
+                  <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
+                </ul>
+              </div>
+        </div>
+        <p><>La mejor parte es que también puedes hacer esto con cualquier variante de botón:</p>
+        <div class="particionesCentro">
+            <!-- Example single danger button -->
+            <div class="btn-group">
+                <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Action
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Acción</a></li>
+                    <li><a class="dropdown-item" href="#">Otra acción</a></li>
+                    <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Enlace separado</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <br>
+        <h4 id="btnDiv">Botón dividir</h4>
+        <p>Del mismo modo, cree menús desplegables de botones divididos con prácticamente el mismo marcado que los menús 
+            desplegables de un solo botón, pero con la adición de .dropdown-toggle-split para el espacio adecuado alrededor 
+            del símbolo de intercalación desplegable.
+
+            Usamos esta clase adicional para reducir el relleno horizontal a cada lado del símbolo de intercalación en un 
+            25 % y eliminar el margen izquierdo que se agrega para los menús desplegables de botones regulares. Esos cambios 
+            adicionales mantienen el símbolo de intercalación centrado en el botón de división y brindan un área de impacto de 
+            tamaño más apropiado al lado del botón principal.
+        </p>
+        <div class="particionesCentro">
+            <!-- Example split danger button -->
+            <div class="btn-group">
+                <button type="button" class="btn btn-danger">Acción</button>
+                <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="visually-hidden">Alternar menú desplegable</span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Acción</a></li>
+                    <li><a class="dropdown-item" href="#">Otra acción</a></li>
+                    <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Enlace separado</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <br>
+        <h4 id="dimensi">Dimensionamiento</h4>
+        <P>Los menús desplegables de botones funcionan con botones de todos los tamaños, incluidos los botones desplegables 
+            predeterminados y divididos.
+        </P>
+        <div  class="particionesCentro">
+            <!-- Large button groups (default and split) -->
+            <div class="btn-group">
+                <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Botón largo
+                 </button>
+                <ul class="dropdown-menu">
+                 ...
+                </ul>
+            </div>
+            <div class="btn-group">
+                <button class="btn btn-secondary btn-lg" type="button">
+                  Botón de división grande
+                </button>
+                <button type="button" class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="visually-hidden">Alternar menú desplegable</span>
+                </button>
+                <ul class="dropdown-menu">
+                    ...
+                </ul>
+            </div>
+        </div>
+        <div class="particionesCentro">
+            <div class="btn-group">
+                <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Botón pequeño
+                </button>
+                <ul class="dropdown-menu">
+                  ...
+                </ul>
+              </div>
+              <div class="btn-group">
+                <button class="btn btn-secondary btn-sm" type="button">
+                  Pequeño botón dividido
+                </button>
+                <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="visually-hidden">Alternar menú desplegable</span>
+                </button>
+                <ul class="dropdown-menu">
+                  ...
+                </ul>
+              </div>
+        </div>
+
+        <br>
+        <h4 id="menDesObs">Menús desplegables oscuros</h4>
+        <p>Opte por menús desplegables más oscuros para que coincidan con una barra de navegación oscura o un estilo personalizado 
+            agregando .dropdown-menu-dark a un .dropdown-menu existente. No se requieren cambios en los elementos desplegables.
+        </p>
+        <div class="particionesCentro">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                  Botón desplegable
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                  <li><a class="dropdown-item active" href="#">Acción</a></li>
+                  <li><a class="dropdown-item" href="#">Otra acción</a></li>
+                  <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Enlace separado</a></li>
+                </ul>
+              </div>
+        </div>
+        <p>Y ponerlo en uso en una barra de navegación:</p>
+        <div class="particionesCentro">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Barra de navegación</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Desplegable
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                          <li><a class="dropdown-item" href="#">Acción</a></li>
+                          <li><a class="dropdown-item" href="#">Otra acción</a></li>
+                          <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </div>
+
+        <br>
+        <h4 id="direct">Dirección</h4>
+        <div class="particionesCentroTexto">
+            <h6>RTL</h6>
+            <p>Las direcciones se reflejan cuando se usa Bootstrap en RTL, lo que significa que .dropstart aparecerá en el lado derecho.</p>
+        </div>
+
+        <br>
+        <h4 id="caerhast">Caer hasta</h4>
+        <p>Active los menús desplegables sobre los elementos agregando .dropup al elemento principal.</p>
+        <div class="particionesCentro">
+            <!-- Default dropup button -->
+            <div class="btn-group dropup">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Caer hasta
+                </button>
+                <ul class="dropdown-menu">
+                <!-- Dropdown menu links -->
+                </ul>
+            </div>
+  
+            <!-- Split dropup button -->
+            <div class="btn-group dropup">
+                <button type="button" class="btn btn-secondary">
+                  Menú desplegable dividido
+                </button>
+                <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="visually-hidden">Alternar menú desplegable</span>
+                </button>
+                <ul class="dropdown-menu">
+                <!-- Dropdown menu links -->
+                </ul>
+            </div>
+        </div>
+
+        <br>
+        <h4 id="gotDer">Gota a la derecha</h4>
+        <p>Active los menús desplegables a la derecha de los elementos agregando .dropend al elemento principal.</p>
+        <div class="particionesCentro">
+            <!-- Default dropend button -->
+            <div class="btn-group dropend">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Gota a la derecha
+                </button>
+                <ul class="dropdown-menu">
+                <!-- Dropdown menu links -->
+                </ul>
+            </div>
+  
+            <!-- Split dropend button -->
+            <div class="btn-group dropend">
+                <button type="button" class="btn btn-secondary">
+                  Dropend dividido
+                </button>
+                <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="visually-hidden">Cambiar a la derecha</span>
+                </button>
+                <ul class="dropdown-menu">
+                <!-- Dropdown menu links -->
+                </ul>
+            </div>
+        </div>
+
+        <br>
+        <h4 id="gotIzq">Gota a la izquierda</h4>
+        <p>Active los menús desplegables a la izquierda de los elementos agregando .dropstart al elemento principal.</p>
+        <div class="particionesCentro">
+            <!-- Default dropstart button -->
+            <div class="btn-group dropstart">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Inicio directo
+                </button>
+                <ul class="dropdown-menu">
+                <!-- Dropdown menu links -->
+                </ul>
+            </div>
+  
+            <!-- Split dropstart button -->
+            <div class="btn-group">
+                <div class="btn-group dropstart" role="group">
+                    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Alternar Dropstart</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                    <!-- Dropdown menu links -->
+                    </ul>
+                </div>
+                <button type="button" class="btn btn-secondary">
+                  Inicio directo dividido
+                </button>
+            </div>
+        </div>
+
+        <br>
+        <h4 id="opMenu">Opción del menú</h4>
+        <p>Puede usar elementos < a> o < button> como elementos desplegables.</p>
+        <div class="particionesCentro">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                  Desplegable
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <li><button class="dropdown-item" type="button">Acción</button></li>
+                  <li><button class="dropdown-item" type="button">Otra acción</button></li>
+                  <li><button class="dropdown-item" type="button">Algo más aquí</button></li>
+                </ul>
+              </div>
+        </div>
+        <p>También puede crear elementos desplegables no interactivos con .dropdown-item-text. Siéntase libre de diseñar más 
+            con CSS personalizado o utilidades de texto.
+        </p>
+        <div class="particionesCentro">
+            <ul class="dropdown-menu">
+                <li><span class="dropdown-item-text">Texto del elemento desplegable</span></li>
+                <li><a class="dropdown-item" href="#">Acción</a></li>
+                <li><a class="dropdown-item" href="#">Otra acción</a></li>
+                <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
+              </ul>
+        </div>
+
+        <br>
+        <h4 id="act">Activar</h4>
+        <p>Agregue .active a los elementos en el menú desplegable para diseñarlos como activos. Para transmitir el estado activo 
+            a las tecnologías de asistencia, use el atributo aria-current: use el valor de página para la página actual o verdadero 
+            para el elemento actual en un conjunto.
+        </p>
+        <div class="particionesCentro">
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Enlace regular</a></li>
+                <li><a class="dropdown-item active" href="#" aria-current="true">Enlace activo</a></li>
+                <li><a class="dropdown-item" href="#">Otro link</a></li>
+              </ul>
+        </div>
+
+        <br>
+        <h4 id="dis">Discapacitado</h4>
+        <p>Agregue .disabled a los elementos en el menú desplegable para <b>diseñarlos como deshabilitados.</b></p>
+        <div class="particionesCentro">
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Enlace regular</a></li>
+                <li><a class="dropdown-item disabled">Enlace deshabilitado</a></li>
+                <li><a class="dropdown-item" href="#">Otro enlace</a></li>
+              </ul>
+        </div>
+
+        <br>
+        <h4 id="aliMenu">Alineación de menu</h4>
+        <p>De forma predeterminada, un menú desplegable se coloca automáticamente al 100 % desde la parte superior y a lo largo del 
+            lado izquierdo de su elemento principal. Puede cambiar esto con las clases direccionales .drop*, pero también puede 
+            controlarlas con clases modificadoras adicionales.
+
+            Agregue .dropdown-menu-end a un .dropdown-menu para alinear a la derecha el menú desplegable. Las direcciones se reflejan 
+            cuando se usa Bootstrap en RTL, lo que significa que .dropdown-menu-end aparecerá en el lado izquierdo.
+        </p>
+        <div class="particionesCentroTexto">
+            <p><b>¡Aviso!</b>Los menús desplegables se posicionan gracias a Popper, excepto cuando están contenidos en una barra de navegación.</p>
+        </div>
+        <div class="particionesCentro">
+            <div class="btn-group">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Ejemplo de menú alineado a la derecha
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><button class="dropdown-item" type="button">Acción</button></li>
+                  <li><button class="dropdown-item" type="button">Otra acción</button></li>
+                  <li><button class="dropdown-item" type="button">Algo más aquí</button></li>
+                </ul>
+              </div>
+        </div>
+
+        <br>
+        <h4 id="aliRes">Alineación receptiva</h4>
+        <p>Si desea utilizar la alineación receptiva, deshabilite el posicionamiento dinámico agregando el 
+            atributo data-bs-display="static" y use las clases de variación receptivas.
+
+            Para alinear a la derecha el menú desplegable con el punto de interrupción dado o más grande, agregue 
+            .dropdown-menu{-sm|-md|-lg|-xl|-xxl}-end.
+        </p>
+        <div class="particionesCentro">
+            <div class="btn-group">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                  Alineado a la izquierda pero alineado a la derecha cuando la pantalla es grande
+                </button>
+                <ul class="dropdown-menu dropdown-menu-lg-end">
+                  <li><button class="dropdown-item" type="button">Acción</button></li>
+                  <li><button class="dropdown-item" type="button">Otra acción</button></li>
+                  <li><button class="dropdown-item" type="button">Algo más aquí</button></li>
+                </ul>
+              </div>
+        </div>
+        <p>Para alinear a la izquierda el menú desplegable con el punto de interrupción dado o más grande, agregue 
+            .dropdown-menu-end y .dropdown-menu{-sm|-md|-lg|-xl|-xxl}-start.
+        </p>
+        <div  class="particionesCentro">
+            <div class="btn-group">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                  Alineado a la derecha pero alineado a la izquierda cuando la pantalla es grande
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                  <li><button class="dropdown-item" type="button">Acción</button></li>
+                  <li><button class="dropdown-item" type="button">Otra acción</button></li>
+                  <li><button class="dropdown-item" type="button">Algo más aquí</button></li>
+                </ul>
+              </div>
+        </div>
+        <p>Tenga en cuenta que no necesita agregar un atributo data-bs-display="static" a los botones desplegables en las 
+            barras de navegación, ya que Popper no se usa en las barras de navegación.
+        </p>
+
+        <br>
+        <h4 id="aliOps">Alineación Opcional</h4>
+        <p>Tomando la mayoría de las opciones que se muestran arriba, aquí hay una pequeña demostración del fregadero de la 
+            cocina de varias opciones de alineación desplegable en un solo lugar.
+        </p>
+        <div class="particionesCentro">
+            <div class="btn-group">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                  Desplegable
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item" href="#">Opción del menú</a></li>
+                  <li><a class="dropdown-item" href="#">Opción del menú</a></li>
+                  <li><a class="dropdown-item" href="#">Opción del menú</a></li>
+                </ul>
+              </div>
+              
+              <div class="btn-group">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Menú alineado a la derecha
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#">Opción del menú</a></li>
+                  <li><a class="dropdown-item" href="#">Opción del menú</a></li>
+                  <li><a class="dropdown-item" href="#">Opción del menú</a></li>
+                </ul>
+              </div>
+              
+              <div class="btn-group">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                  Alineado a la izquierda, alineado a la derecha lg
+                </button>
+                <ul class="dropdown-menu dropdown-menu-lg-end">
+                  <li><a class="dropdown-item" href="#">Opción del menú</a></li>
+                  <li><a class="dropdown-item" href="#">Opción del menú</a></li>
+                  <li><a class="dropdown-item" href="#">Opción del menú</a></li>
+                </ul>
+              </div>
+              
+              <div class="btn-group">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                  LG alineado a la derecha, alineado a la izquierda
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                  <li><a class="dropdown-item" href="#">Opción del menú</a></li>
+                  <li><a class="dropdown-item" href="#">Opción del menú</a></li>
+                  <li><a class="dropdown-item" href="#">Opción del menú</a></li>
+                </ul>
+              </div>
+              
+              <div class="btn-group dropstart">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Inicio directo
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Opción del menú</a></li>
+                  <li><a class="dropdown-item" href="#">Opción del menú</a></li>
+                  <li><a class="dropdown-item" href="#">Opción del menú</a></li>
+                </ul>
+              </div>
+              
+              <div class="btn-group dropend">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropend
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Opción del menú</a></li>
+                  <li><a class="dropdown-item" href="#">Opción del menú</a></li>
+                  <li><a class="dropdown-item" href="#">Opción del menú</a></li>
+                </ul>
+              </div>
+              
+              <div class="btn-group dropup">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Caer hasta
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Opción del menú</a></li>
+                  <li><a class="dropdown-item" href="#">Opción del menú</a></li>
+                  <li><a class="dropdown-item" href="#">Opción del menú</a></li>
+                </ul>
+              </div>
+        </div>
+
+        <br>
+        <h4 id="contMenu">Contenido del menu</h4>
+        <h4 id="encab">Encabezados</h4>
+        <p>Agregue un encabezado para etiquetar secciones de acciones en cualquier menú desplegable.</p>
+        <div class="particionesCentro">
+            <ul class="dropdown-menu">
+                <li><h6 class="dropdown-header">Encabezado desplegable</h6></li>
+                <li><a class="dropdown-item" href="#">Acción</a></li>
+                <li><a class="dropdown-item" href="#">Otra acción</a></li>
+              </ul>
+        </div>
+
+        <br>
+        <h4 id="divisores">Divisores</h4>
+        <p>Separe los grupos de elementos de menú relacionados con un divisor.</p>
+        <div class="particionesCentro">
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Acción</a></li>
+                <li><a class="dropdown-item" href="#">Otra acción</a></li>
+                <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Enlace separado</a></li>
+              </ul>
+        </div>
+
+        <br>
+        <h4 id="text">Texto</h4>
+        <p>Coloque cualquier texto de forma libre dentro de un menú desplegable con texto y use las utilidades de espaciado. 
+            Tenga en cuenta que probablemente necesitará estilos de tamaño adicionales para restringir el ancho del menú.
+        </p>
+        <div class="particionesCentro">
+            <div class="dropdown-menu p-4 text-muted" style="max-width: 200px;">
+                <p>
+                  Algunos ejemplos de texto que fluyen libremente dentro del menú desplegable.
+                </p>
+                <p class="mb-0">
+                  Y este es más texto de ejemplo.
+                </p>
+              </div>
+        </div>
+
+        <br>
+        <h4 id="formular">Formularios</h4>
+        <p>Coloque un formulario dentro de un menú desplegable, o conviértalo en un menú desplegable, y use utilidades de 
+            margen o relleno para darle el espacio negativo que necesita.
+        </p>
+        <div class="particionesCentro">
+            <div class="dropdown-menu">
+                <form class="px-4 py-3">
+                  <div class="mb-3">
+                    <label for="exampleDropdownFormEmail1" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleDropdownFormPassword1" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                  </div>
+                  <div class="mb-3">
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                      <label class="form-check-label" for="dropdownCheck">
+                        Recordarme
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+                </form>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">¿Nuevo por aquí? Inscribirse</a>
+                <a class="dropdown-item" href="#">¿Olvidó la contraseña?</a>
+              </div>
+        </div>
+        <div class="particionesCentro">
+            <form class="dropdown-menu p-4">
+                <div class="mb-3">
+                  <label for="exampleDropdownFormEmail2" class="form-label">Correo electrónico	</label>
+                  <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleDropdownFormPassword2" class="form-label">Contraseña/label>
+                  <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+                </div>
+                <div class="mb-3">
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                    <label class="form-check-label" for="dropdownCheck2">
+                      Recordarme
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+              </form>
+        </div>
+
+        <br>
+        <h4 id="opDesplega">Opciones desplegables</h4>
+        <p>Use data-bs-offset o data-bs-reference para cambiar la ubicación del menú desplegable.</p>
+        <div class="particionesCentro">
+            <div class="d-flex">
+                <div class="dropdown me-1">
+                  <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
+                    Compensar
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                    <li><a class="dropdown-item" href="#">Acción</a></li>
+                    <li><a class="dropdown-item" href="#">Otra acción</a></li>
+                    <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
+                  </ul>
+                </div>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-secondary">Referencia</button>
+                  <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent">
+                    <span class="visually-hidden">Alternar menú desplegable</span>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuReference">
+                    <li><a class="dropdown-item" href="#">Acción</a></li>
+                    <li><a class="dropdown-item" href="#">Otra acción</a></li>
+                    <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Enlace separado</a></li>
+                  </ul>
+                </div>
+              </div>
+        </div>
+
+        <br>
+        <h4 id="compCieAut">Comportamiento de cierre automático</h4>
+        <p>De forma predeterminada, el menú desplegable se cierra al hacer clic dentro o fuera del menú desplegable. Puede usar 
+            la opción de cierre automático para cambiar este comportamiento del menú desplegable.
+        </p>
+        <div class="particionesCentro">
+            <div class="btn-group">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="defaultDropdown" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                  Menú desplegable predeterminado
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="defaultDropdown">
+                  <li><a class="dropdown-item" href="#">Opción del menú</a></li>
+                  <li><a class="dropdown-item" href="#">Opción del menú</a></li>
+                  <li><a class="dropdown-item" href="#">Opción del menú</a></li>
+                </ul>
+              </div>
+              
+              <div class="btn-group">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuClickableOutside" data-bs-toggle="dropdown" data-bs-auto-close="inside" aria-expanded="false">
+                  Se puede hacer clic afuera
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableOutside">
+                  <li><a class="dropdown-item" href="#">Opción del menú</a></li>
+                  <li><a class="dropdown-item" href="#">Opción del menú</a></li>
+                  <li><a class="dropdown-item" href="#">Opción del menú</a></li>
+                </ul>
+              </div>
+              
+              <div class="btn-group">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuClickableInside" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                  Se puede hacer clic en el interior
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickableInside">
+                  <li><a class="dropdown-item" href="#">Opción del menú</a></li>
+                  <li><a class="dropdown-item" href="#">Opción del menú</a></li>
+                  <li><a class="dropdown-item" href="#">Opción del menú</a></li>
+                </ul>
+              </div>
+              
+              <div class="btn-group">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuClickable" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                  Cierre manual
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuClickable">
+                  <li><a class="dropdown-item" href="#">Opción del menú</a></li>
+                  <li><a class="dropdown-item" href="#">Opción del menú</a></li>
+                  <li><a class="dropdown-item" href="#">Opción del menú</a></li>
+                </ul>
+              </div>
+        </div>
+    </section>
+    <br><br><br>
+
+     <!--PIE DE PÁGINA-->
+     <section class="piePagina">
+        
+      <div class="izquirdaPie">
+          <img src="/IMG/bootstrap-logo.png" width="10%">
+          <h6>Boostrap</h6>
+          <p style="font-size: small;">Diseñado y construido con todo el amor del mundo por el equipo de Bootstrap 
+              con la ayuda de nuestros colaboradores.
+              
+              Code licensed MIT, docs CC BY 3.0.
+              Currently v5.1.3.
+          </p>
+      </div>
+
+      <!--5-->
+      <div class="cincoFooter">
+          <ul>
+              <li class="list-group" style="color:black"><b>Comuidad</b></li>
+              <li class="list-group"><a class="nav-link" style="color:black" href="#">Asuntos</a></li>
+              <li class="list-group"><a class="nav-link" style="color:black" href="#">Discusiones</a></li>
+              <li class="list-group"><a class="nav-link" style="color:black" href="#">Patrocinadores corporativos</a></li>
+              <li class="list-group"><a class="nav-link" style="color:black" href="#">Colectivo Abierto</a></li>
+              <li class="list-group"><a class="nav-link" style="color:black" href="#">Slack</a></li>
+              <li class="list-group"><a class="nav-link" style="color:black" href="#">Stack Overflow</a></li>           
+          </ul>
+      </div>
+
+       <!--4-->
+       <div class="cuartoFooter">
+          <ul> 
+              <li class="list-group" style="color:black"><b>Proyectos</b></li>  
+              <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Boostrap 5</a></li>    
+              <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Boostrap 4</a></li>    
+              <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Icons</a></li>    
+              <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">RFS</a></li>             
+              <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Empezar npm</a></li>    
+          </ul>
+      </div>
+
+      <!--3-->
+      <div class="tecerFooter">
+          <ul>
+              <li class="list-group" style="color:black"><b>Guias</b></li>
+              <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Empezar</a></li>  
+              <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Plantilla de inicio</a></li>  
+              <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Paquete web</a></li>  
+              <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">paquete</a></li>  
+          </ul>
+      </div>
+
+      <!--2-->
+      <div class="segundaFooter">
+          <ul>
+              <li class="list-group" style="color:black"><b>Links</b></li>
+              <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Casa</a></li>  
+              <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Documentos</a></li>  
+              <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Ejemplos</a></li>  
+              <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Temas</a></li>  
+              <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Blog</a></li>  
+          </ul>
+      </div>
+  </section>
+</body>
+</html>

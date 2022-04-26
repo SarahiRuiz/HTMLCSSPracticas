@@ -1,0 +1,94 @@
+.bordeMenu{
+    background-color: rgb(203, 152, 251);
+    padding-left:10%;
+    padding-right: 5%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+
+.menuBajoMenu{
+    border: solid  1px rgb(160, 160, 160);
+    padding-left:10%;
+    padding-right: 12%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.izquierdaMenu{
+    
+    padding-left:10%;
+}
+
+.derechaAside{
+    float: right;
+    padding-right: 5%;
+}
+
+.derechaMenu{
+    float: right;
+    padding-left: 40%;
+}
+
+.infCentro{
+    padding-left: 23%;
+    padding-right: 28%;
+    text-align: justify;
+}
+
+.particionesCentro{
+    border: solid 1px rgb(143, 143, 143);
+    padding: 10px;
+    float: center;
+    margin-top: 10PX;
+    margin-bottom: 10PX;
+}
+
+.particionesCentroTexto{
+    border: solid 1px rgb(199, 197, 197);
+    border-left: solid 3px rgb(0, 235, 125);
+    padding: 10px;
+    float: center;
+    margin-top: 10PX;
+    margin-bottom: 10PX;
+}
+
+/*Pie de página*/
+.piePagina{
+    background-color: rgb(214, 214, 214);
+    height: 320px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    
+}
+
+.izquirdaPie{
+    float: left;
+    width: 25%;
+    padding-left: 10px;
+    text-align: justify;
+}
+
+.segundaFooter{
+    float: right;
+    width: 15%;
+    padding-left: 10px;
+}
+
+.tecerFooter{
+    float: right;
+    width: 15%;
+}
+
+.cuartoFooter{
+    float: right;
+    padding-left: 10px;
+    width: 15%;
+}
+
+.cincoFooter{
+    float: right;
+    width: 15%;
+}

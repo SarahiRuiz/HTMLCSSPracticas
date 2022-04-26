@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Practica Boostrap</title>
+    <link rel="stylesheet" href="/CSS/styleModal.css">
+    <link rel="icon" href="/IMG/bootstrap-logo.png">
+    <!--Boostrap-->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <!--Menu superior-->
+    <section class="bordeMenu">
+        <ul class="nav">
+            <li>
+                <img src="/IMG/bootstrap-logo.png" width="50px">
+            </li>
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" style="color:white" href="#">Casa</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#" style="color:white">Docs</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#" style="color:white">Ejemplos</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#" style="color:white">Iconos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color:white">Temas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color:white">Blog</a>
+            </li>
+        
+        <div class="derechaMenu">
+            <a href="https://github.com/twbs" style="color:rgb(203, 152, 251)">
+                <svg xmlns="http://www.w3.org/2000/svg" style="color:black" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+            </a>
+            <a href="https://twitter.com/getbootstrap" style="color:rgb(203, 152, 251)">
+                <svg xmlns="http://www.w3.org/2000/svg" style="color:black" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                </svg>
+            </a>
+            <a href="https://bootstrap-slack.herokuapp.com/" style="color:rgb(203, 152, 251)">
+                <svg xmlns="http://www.w3.org/2000/svg" style="color:black" width="16" height="16" fill="currentColor" class="bi bi-hash" viewBox="0 0 16 16">
+                    <path d="M8.39 12.648a1.32 1.32 0 0 0-.015.18c0 .305.21.508.5.508.266 0 .492-.172.555-.477l.554-2.703h1.204c.421 0 .617-.234.617-.547 0-.312-.188-.53-.617-.53h-.985l.516-2.524h1.265c.43 0 .618-.227.618-.547 0-.313-.188-.524-.618-.524h-1.046l.476-2.304a1.06 1.06 0 0 0 .016-.164.51.51 0 0 0-.516-.516.54.54 0 0 0-.539.43l-.523 2.554H7.617l.477-2.304c.008-.04.015-.118.015-.164a.512.512 0 0 0-.523-.516.539.539 0 0 0-.531.43L6.53 5.484H5.414c-.43 0-.617.22-.617.532 0 .312.187.539.617.539h.906l-.515 2.523H4.609c-.421 0-.609.219-.609.531 0 .313.188.547.61.547h.976l-.516 2.492c-.008.04-.015.125-.015.18 0 .305.21.508.5.508.265 0 .492-.172.554-.477l.555-2.703h2.242l-.515 2.492zm-1-6.109h2.266l-.515 2.563H6.859l.532-2.563z"/>
+                </svg>
+            </a>
+            <a href="https://opencollective.com/bootstrap" style="color:rgb(203, 152, 251)">
+                <svg xmlns="http://www.w3.org/2000/svg" style="color:black" width="16" height="16" fill="currentColor" class="bi bi-record-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                </svg>
+            </a>
+            <button type="button" class="btn btn-outline-warning">Descargar</button>
+        </div>
+        </ul>
+    </section>
+
+    <!--Sección de abajo del menu-->
+    <section class="menuBajoMenu">
+        <!--Buscador de la izquierda-->
+        <nav class="navbar navbar-light">
+            <div class="container-fluid">
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Control+/</button>
+            </form>
+            
+            <!--Boton de la derecha-->
+            <form class="d-flex">
+              <div class="btn-group" role="group" >
+                <button id="btnGroupDrop1" type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Boostrap v5.1</button>
+                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <li><a class="dropdown-item" href="#">Ultima (5.1.x)</a></li>
+                  <li><a class="dropdown-item" href="#">v4.6.x</a></li>
+                  <li><a class="dropdown-item" href="#">v3.4.1</a></li>
+                  <li><a class="dropdown-item" href="#">v2.3.2</a></li>
+                </ul>
+              </div>
+            </form>
+            </div> 
+          </nav>
+    </section>
+
+    <!--menu de la izquierda-->
+    <aside class="izquierdaMenu sticky-top">
+        <div class="btn-group" role="button" >
+            <li id="btnGroupDrop1"  class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Componentes</li>
+            <ul class="dropdown-menu list-group-flush">
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/index.html">Botones</a></li><!--si.les falta un poco-->
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/navsAndTabs.html">Navegadores y pestañas</a></li><!--si con errores-->
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/cargadores.html">Cargadores</a></li><!--si con errores-->
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/progreso.html">Progreso</a></li><!--si con errores-->
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/modal.html">Modal</a></li>
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/desplegables.html">Desplegable</a></li>
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/navRecientes.html">Navegadores Recientes</a></li>
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/badejEntr.html">Bandeja de Entrada</a></li>
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/carrusel.html">Marcadores de Posición</a></li>
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/listaDeGrupos.html">Fuera del lienzo</a></li>
+              </ul>
+        </div>
+    </aside>
+
+    <!--El recuardo de la derecha-->
+    <aside class="derechaAside sticky-top">
+        <ul>
+            <li class="list-group nav-link" style="color:rgb(110, 110, 110)"><u>En esta pagina</u></li>
+            <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110)" href="#comfun">¿Cómo funciona?</a></li>
+            <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110)" href="#ejem">Ejemplos</a></li>
+            <ul>
+                <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110)" href="#compMod">Componentes modal</a></li>
+                <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110)" href="#demMod">Demo en vivo</a></li>
+                <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110)" href="#fonEst">Telón de fondo estático</a></li>
+                <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110)" href="#desContLrg">Desplazamiento de contenido largo</a></li>
+                <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110)" href="#centrVerti">Centrado verticalmente</a></li>
+                <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110)" href="#herVentEm">Información sobre herramientas <br> y ventanas emergentes</a></li>
+                 <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110)" href="#usaCuad">Usando la cuadrícula</a></li>
+                <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110) " href="#modVar">Contenido modal variable</a></li>
+                <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110) " href="#altMod">Alternar entre modales</a></li>
+            </ul>   
+        </ul>
+    </aside>
+
+    <!--Aqui termina la base de la página-->
+
+    <!--Modal-->
+    <section class="infCentro">
+        <h2>Modal</h2>
+        <p>Use el complemento modal de JavaScript de Bootstrap para agregar cuadros de diálogo a su sitio para cajas de luz, 
+            notificaciones de usuario o contenido completamente personalizado.
+        </p>
+
+        <br>
+        <h4 id="comfun">¿Cómo funciona?</h4>
+        <p>Antes de comenzar con el componente modal de Bootstrap, asegúrese de leer lo siguiente, ya que nuestras opciones de menú 
+            han cambiado recientemente.
+        </p>
+        <ul>
+            <li>Los modales se construyen con HTML, CSS y JavaScript. Se colocan sobre todo lo demás en el documento y eliminan 
+                el desplazamiento del < cuerpo> para que el contenido modal se desplace en su lugar.</li>
+            <li>Al hacer clic en el "telón de fondo" modal, se cerrará automáticamente el modal.</li>
+            <li>Bootstrap solo admite una ventana modal a la vez. Los modales anidados no son compatibles porque creemos que son
+                 malas experiencias de usuario.</li>
+            <li>Los modales usan position: fixed, que a veces puede ser un poco particular sobre su representación. Siempre que sea 
+                posible, coloque su HTML modal en una posición de nivel superior para evitar posibles interferencias de otros 
+                elementos. Es probable que tenga problemas al anidar un .modal dentro de otro elemento fijo.</li>
+            <li>Una vez más, debido a la posición: fijo, hay algunas advertencias con el uso de modales en dispositivos móviles. 
+                Consulte nuestros documentos de soporte del navegador para obtener más información.</li>
+            <li>Debido a cómo HTML5 define su semántica, el atributo HTML de enfoque automático no tiene efecto en los modales de Bootstrap. 
+                Para lograr el mismo efecto, use JavaScript personalizado:</li>
+        </ul>
+        <div class="particionesCentro">
+            var myModal = document.getElementById('myModal') <br>
+            var myInput = document.getElementById('myInput') <br> <br>
+
+            myModal.addEventListener('shown.bs.modal', function () { <br>
+            myInput.focus() <br>
+            }) <br>
+        </div>
+        <div class="particionesCentroTexto">
+            <p>El efecto de animación de este componente depende de la consulta de medios de movimiento reducido preferido. 
+                Consulte la sección de movimiento reducido de nuestra documentación de accesibilidad.
+            </p>
+        </div>
+        <p>Siga leyendo para obtener demostraciones y pautas de uso.</p>
+
+        <br>
+        <h4 id="ejem">Ejemplos</h4>
+        <h4 id="compMod">Componentes modal</h4>
+        <p>A continuación se muestra un ejemplo modal estático (lo que significa que su posición y visualización se han anulado). 
+            Se incluyen el encabezado modal, el cuerpo modal (requerido para el relleno) y el pie de página modal (opcional). 
+            Le pedimos que incluya encabezados modales con acciones de descarte siempre que sea posible, o proporcione otra 
+            acción de descarte explícita.
+        </p>
+
+        <div class="particionesCentro">
+            <div class="modal" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Titulo del Modal</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>El contenido del modal va aquí.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-primary">Guardar cambios</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        <br>
+        <h4 id="demMod">Demo en vivo</h4>
+        <p>Alterne una demostración modal de trabajo haciendo clic en el botón a continuación. Se deslizará hacia abajo y 
+            se desvanecerá desde la parte superior de la página.
+        </p>
+
+        <div class="particionesCentro">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Lanzar modo de demostración
+            </button>
+  
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Titulo del Modal</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">Guardar cambios</button>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+
+        <br>
+        <h4 id="fonEst">Telón de fondo estático</h4>
+        <p>Cuando el fondo se establece en estático, el modal no se cerrará al hacer clic fuera de él. Haga clic en el botón 
+            de abajo para probarlo.
+        </p>
+        <div class="particionesCentro">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Lanzar modal de fondo estático
+            </button>
+  
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Titulo del Modal</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">Comprendido</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <h4 id="desContLrg">Desplazamiento de contenido largo</h4>
+        <p>Cuando los modales se vuelven demasiado largos para la ventana gráfica o el dispositivo del usuario, se desplazan 
+            independientemente de la página misma. Pruebe la demostración a continuación para ver a qué nos referimos.
+
+            También puede crear un modal desplazable que permita desplazar el cuerpo modal agregando .modal-dialog-scrollable 
+            a .modal-dialog.
+        </p>
+        <div class="particionesCentro">
+            <!-- Scrollable modal -->
+            <div class="modal-dialog modal-dialog-scrollable">
+            ...
+            </div>        
+        </div>
+
+        <br>
+        <h4 id="centrVerti">Centrado verticalmente</h4>
+        <p>Agregue .modal-dialog-centered a .modal-dialog para centrar verticalmente el modal.</p>
+        <div class="particionesCentro">
+            <!-- Vertically centered modal -->
+            <div class="modal-dialog modal-dialog-centered">
+            ...
+            </div>
+  
+            <!-- Vertically centered scrollable modal -->
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            ...
+            </div>
+        </div>
+
+        <br>
+        <h4 id="herVentEm">Información sobre herramientas y ventanas emergentes</h4>
+        <p>La información sobre herramientas y las ventanas emergentes se pueden colocar dentro de los modales según sea 
+            necesario. Cuando los modales están cerrados, cualquier información sobre herramientas y ventanas emergentes 
+            también se descartan automáticamente.
+        </p>
+        <div class="particionesCentro">
+            <div class="modal-body">
+                <h5>Popover en un modal</h5>
+                <p>Esto <a href="#" role="button" class="btn btn-secondary popover-test" title="Popover title" data-bs-content="Popover body content is set in this attribute.">button</a> triggers a popover on click.</p>
+                <hr>
+                <h5>Información sobre herramientas en un modal</h5>
+                <p><a href="#" class="tooltip-test" title="Tooltip">Este enlace</a> y <a href="#" class="tooltip-test" title="Tooltip">ese enlace </a> tener información sobre herramientas al pasar el mouse.</p>
+              </div>
+        </div>
+
+        <br>
+        <h4 id="usaCuad">Usando la cuadrícula</h4>
+        <p>Utilice el sistema de cuadrícula Bootstrap dentro de un modal anidando .container-fluid dentro del .modal-body. 
+            Luego, use las clases normales del sistema de cuadrícula como lo haría en cualquier otro lugar.
+        </p>
+        <div class="particionesCentro">
+            <div class="modal-body">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-md-4">.col-md-4</div>
+                    <div class="col-md-4 ms-auto">.col-md-4 .ms-auto</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-3 ms-auto">.col-md-3 .ms-auto</div>
+                    <div class="col-md-2 ms-auto">.col-md-2 .ms-auto</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 ms-auto">.col-md-6 .ms-auto</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-9">
+                      Level 1: .col-sm-9
+                      <div class="row">
+                        <div class="col-8 col-sm-6">
+                          Level 2: .col-8 .col-sm-6
+                        </div>
+                        <div class="col-4 col-sm-6">
+                          Level 2: .col-4 .col-sm-6
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <br>
+        <h4 id="modVar">Contenido modal variable</h4>
+        <p>¿Tiene un montón de botones que activan el mismo modal con contenidos ligeramente diferentes? Use los atributos 
+            event.relatedTarget y HTML data-bs-* para variar el contenido del modal según el botón en el que se hizo clic.
+
+            A continuación se muestra una demostración en vivo seguida de un ejemplo de HTML y JavaScript. Para obtener más 
+            información, lea los documentos de eventos modales para obtener detalles sobre el objetivo relacionado.
+        </p>
+        <div class="particionesCentro">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Abrir modal para @mdo</button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">Modal abierto para @fat</button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Modal abierto para @getbootstrap</button>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Nuevo mensaje</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">Destinatario:</label>
+                                    <input type="text" class="form-control" id="recipient-name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message-text" class="col-form-label">Mensaje:</label>
+                                    <textarea class="form-control" id="message-text"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">Enviar mensaje</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="particionesCentro">
+            var exampleModal = document.getElementById('exampleModal') <br>
+            exampleModal.addEventListener('show.bs.modal', function (event) { <br>
+            // Botón que activó el modal <br>
+            var button = event.relatedTarget <br>
+            // Extraer información de los atributos data-bs-* <br>
+            var recipient = button.getAttribute('data-bs-whatever') <br>
+            // Si es necesario, puede iniciar una solicitud AJAX aquí <br>
+            // y luego haga la actualización en una devolución de llamada. <br>
+            // <br>
+            // Actualiza el contenido del modal. <br>
+            var modalTitle = exampleModal.querySelector('.modal-title') <br>
+            var modalBodyInput = exampleModal.querySelector('.modal-body input') <br><br>
+
+            modalTitle.textContent = 'New message to ' + recipient <br>
+            modalBodyInput.value = recipient <br>
+            }) <br>
+        </div>
+
+        <br>
+        <h4 id="altMod">Alternar entre modales</h4>
+        <p>Alterne entre múltiples modales con una ubicación inteligente de los atributos data-bs-target y data-bs-toggle. 
+            Por ejemplo, podría alternar un modal de restablecimiento de contraseña desde un modal de inicio de sesión ya 
+            abierto. Tenga en cuenta que no se pueden abrir múltiples modales al mismo tiempo; este método simplemente alterna 
+            entre dos modales separados.
+        </p>
+        <div class="particionesCentro">
+            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalToggleLabel">Modal 1</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Muestre un segundo modal y oculte este con el botón de abajo.
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Abrir un segundo modal</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Oculte este modal y muestre el primero con el botón de abajo.
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Volver al principio</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Abrir el primer modal</a>
+        </div>
+    </section>
+    <br><br><br>
+
+     <!--PIE DE PÁGINA-->
+     <section class="piePagina">
+        
+        <div class="izquirdaPie">
+            <img src="/IMG/bootstrap-logo.png" width="10%">
+            <h6>Boostrap</h6>
+            <p style="font-size: small;">Diseñado y construido con todo el amor del mundo por el equipo de Bootstrap 
+                con la ayuda de nuestros colaboradores.
+                
+                Code licensed MIT, docs CC BY 3.0.
+                Currently v5.1.3.
+            </p>
+        </div>
+
+        <!--5-->
+        <div class="cincoFooter">
+            <ul>
+                <li class="list-group" style="color:black"><b>Comuidad</b></li>
+                <li class="list-group"><a class="nav-link" style="color:black" href="#">Asuntos</a></li>
+                <li class="list-group"><a class="nav-link" style="color:black" href="#">Discusiones</a></li>
+                <li class="list-group"><a class="nav-link" style="color:black" href="#">Patrocinadores corporativos</a></li>
+                <li class="list-group"><a class="nav-link" style="color:black" href="#">Colectivo Abierto</a></li>
+                <li class="list-group"><a class="nav-link" style="color:black" href="#">Slack</a></li>
+                <li class="list-group"><a class="nav-link" style="color:black" href="#">Stack Overflow</a></li>           
+            </ul>
+        </div>
+
+         <!--4-->
+         <div class="cuartoFooter">
+            <ul> 
+                <li class="list-group" style="color:black"><b>Proyectos</b></li>  
+                <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Boostrap 5</a></li>    
+                <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Boostrap 4</a></li>    
+                <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Icons</a></li>    
+                <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">RFS</a></li>             
+                <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Empezar npm</a></li>    
+            </ul>
+        </div>
+
+        <!--3-->
+        <div class="tecerFooter">
+            <ul>
+                <li class="list-group" style="color:black"><b>Guias</b></li>
+                <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Empezar</a></li>  
+                <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Plantilla de inicio</a></li>  
+                <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Paquete web</a></li>  
+                <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">paquete</a></li>  
+            </ul>
+        </div>
+
+        <!--2-->
+        <div class="segundaFooter">
+            <ul>
+                <li class="list-group" style="color:black"><b>Links</b></li>
+                <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Casa</a></li>  
+                <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Documentos</a></li>  
+                <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Ejemplos</a></li>  
+                <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Temas</a></li>  
+                <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Blog</a></li>  
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

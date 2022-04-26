@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Practica Boostrap</title>
+    <link rel="stylesheet" href="/CSS/styleindex.css">
+    <link rel="icon" href="/IMG/bootstrap-logo.png">
+    <!--Boostrap-->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <!--Menu superior-->
+    <section class="bordeMenu">
+        <ul class="nav">
+            <li>
+                <img src="/IMG/bootstrap-logo.png" width="50px">
+            </li>
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" style="color:white" href="#">Casa</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#" style="color:white">Docs</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#" style="color:white">Ejemplos</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#" style="color:white">Iconos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color:white">Temas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color:white">Blog</a>
+            </li>
+        
+        <div class="derechaMenu">
+            <a href="https://github.com/twbs" style="color:rgb(203, 152, 251)">
+                <svg xmlns="http://www.w3.org/2000/svg" style="color:black" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+            </a>
+            <a href="https://twitter.com/getbootstrap" style="color:rgb(203, 152, 251)">
+                <svg xmlns="http://www.w3.org/2000/svg" style="color:black" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                </svg>
+            </a>
+            <a href="https://bootstrap-slack.herokuapp.com/" style="color:rgb(203, 152, 251)">
+                <svg xmlns="http://www.w3.org/2000/svg" style="color:black" width="16" height="16" fill="currentColor" class="bi bi-hash" viewBox="0 0 16 16">
+                    <path d="M8.39 12.648a1.32 1.32 0 0 0-.015.18c0 .305.21.508.5.508.266 0 .492-.172.555-.477l.554-2.703h1.204c.421 0 .617-.234.617-.547 0-.312-.188-.53-.617-.53h-.985l.516-2.524h1.265c.43 0 .618-.227.618-.547 0-.313-.188-.524-.618-.524h-1.046l.476-2.304a1.06 1.06 0 0 0 .016-.164.51.51 0 0 0-.516-.516.54.54 0 0 0-.539.43l-.523 2.554H7.617l.477-2.304c.008-.04.015-.118.015-.164a.512.512 0 0 0-.523-.516.539.539 0 0 0-.531.43L6.53 5.484H5.414c-.43 0-.617.22-.617.532 0 .312.187.539.617.539h.906l-.515 2.523H4.609c-.421 0-.609.219-.609.531 0 .313.188.547.61.547h.976l-.516 2.492c-.008.04-.015.125-.015.18 0 .305.21.508.5.508.265 0 .492-.172.554-.477l.555-2.703h2.242l-.515 2.492zm-1-6.109h2.266l-.515 2.563H6.859l.532-2.563z"/>
+                </svg>
+            </a>
+            <a href="https://opencollective.com/bootstrap" style="color:rgb(203, 152, 251)">
+                <svg xmlns="http://www.w3.org/2000/svg" style="color:black" width="16" height="16" fill="currentColor" class="bi bi-record-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                </svg>
+            </a>
+            <button type="button" class="btn btn-outline-warning">Descargar</button>
+        </div>
+        </ul>
+    </section>
+
+    <!--Sección de abajo del menu-->
+    <section class="menuBajoMenu">
+        <!--Buscador de la izquierda-->
+        <nav class="navbar navbar-light">
+            <div class="container-fluid">
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Control+/</button>
+            </form>
+            
+            <!--Boton de la derecha-->
+            <form class="d-flex">
+              <div class="btn-group" role="group" >
+                <button id="btnGroupDrop1" type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Boostrap v5.1</button>
+                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <li><a class="dropdown-item" href="#">Ultima (5.1.x)</a></li>
+                  <li><a class="dropdown-item" href="#">v4.6.x</a></li>
+                  <li><a class="dropdown-item" href="#">v3.4.1</a></li>
+                  <li><a class="dropdown-item" href="#">v2.3.2</a></li>
+                </ul>
+              </div>
+            </form>
+            </div> 
+          </nav>
+    </section>
+
+    <!--menu de la izquierda-->
+    <aside class="izquierdaMenu sticky-top">
+        <div class="btn-group" role="button" >
+            <li id="btnGroupDrop1"  class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Componentes</li>
+            <ul class="dropdown-menu list-group-flush">
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/index.html">Botones</a></li><!--si.les falta un poco-->
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/navsAndTabs.html">Navegadores y pestañas</a></li><!--si con errores-->
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/cargadores.html">Cargadores</a></li><!--si con errores-->
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/progreso.html">Progreso</a></li><!--si con errores-->
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/modal.html">Modal</a></li> <!--si con errores-->
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/desplegables.html">Desplegable</a></li> <!--si con errores-->
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/navRecientes.html">Navegadores Recientes</a></li> <!--si con errores-->
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/badejEntr.html">Bandeja de Entrada</a></li> <!--si con errores-->
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/carrusel.html">Carrusel</a></li>
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/listaDeGrupos.html">Lista de grupos</a></li>
+              </ul>
+        </div>
+    </aside>
+
+    <!--El recuardo de la derecha-->
+    <aside class="derechaAside sticky-top vode">
+        <ul>
+            <li class="list-group nav-link" style="color:rgb(110, 110, 110)"><u>En esta pagina</u></li>
+            <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110)" href="#ejemplos">Ejemplos</a></li>
+            <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110)" href="#ajusteTxt">Deshabilitar ajuste de texto</a></li>
+            <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110)" href="#btnEtiqueta">Boton de etiqueta</a></li>
+            <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110)" href="#btnEsquema">Botón de Esquema</a></li>
+            <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110)" href="#tamanio">Tamaño</a></li>
+            <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110)" href="#estadoDeshabilitado">Estado deshabilitado</a></li>
+            <ul>
+                <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110)" href="#linkAdvertencia">Advertencia de funcionalidad de enlace</a></li>
+            </ul>   
+            <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110)" href="#btnBloque">Botones de bloque</a></li>
+            <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110) " href="#CompBtn">Complemento de botón</a></li>
+            <ul>
+                <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110) " href="#AlterarEstados">Alterar Estados</a></li>
+            </ul>   
+        </ul>
+    </aside>
+
+    <!--Aqui termina la base de la página-->
+
+    <!--Botones-->
+    <section class="infCentro">
+        <h2>Botones</h2>
+        <p>Use los estilos de botones personalizados de Bootstrap para acciones en formularios, cuadros de diálogo 
+            y más con soporte para múltiples tamaños, estados y más.</p>
+
+        <br>
+        <h4 id="ejemplos">Ejemplos</h4>
+        <p>Bootstrap incluye varios estilos de botones predefinidos, cada uno con su propio propósito semántico, con
+            algunos extras incluidos para un mayor control.</p>
+        <div class="particionesCentro">
+            <button type="button" class="btn btn-primary">Primario</button>
+            <button type="button" class="btn btn-secondary">Secundario</button>
+            <button type="button" class="btn btn-success">Exitoso</button>
+            <button type="button" class="btn btn-danger">Peligo</button>
+            <button type="button" class="btn btn-warning">Precaución</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-light">Luz</button>
+            <button type="button" class="btn btn-dark">Obscuro</button>
+            <button type="button" class="btn btn-link">Enlace</button>
+        </div>
+
+        <div class="particionesCentroTexto">
+            <h4>Transmitir significado a las tecnologías de asistencia</h4>
+            <p>El uso del color para agregar significado solo proporciona una indicación visual, que no se transmitirá 
+                a los usuarios de tecnologías de asistencia, como los lectores de pantalla. Asegúrese de que la información
+                indicada por el color sea obvia a partir del contenido mismo (por ejemplo, el texto visible) o se incluya
+                a través de medios alternativos, como texto adicional oculto con la clase .visually-hidden.
+            </p>
+        </div>
+
+        <br>
+        <h4 id="ajusteTxt">Deshabilitar ajuste de texto</h4>
+        <p>Si no desea que el texto del botón se ajuste, puede agregar la clase .text-nowrap al botón. En Sass, puede 
+            configurar $btn-white-space: nowrap para deshabilitar el ajuste de texto para cada botón.
+        </p>
+
+        <br>
+        <h4 id="btnEtiqueta">Etiquetas de botón</h4>
+        <p>Las clases .btn están diseñadas para usarse con el elemento < button>. Sin embargo, también puede usar estas 
+            clases en elementos < a> o < input> (aunque algunos navegadores pueden aplicar una representación ligeramente 
+            diferente).
+
+            Al usar clases de botones en elementos < a> que se usan para activar la funcionalidad en la página (como el 
+            contenido colapsado), en lugar de vincular a nuevas páginas o secciones dentro de la página actual, estos 
+            enlaces deben tener un rol = "botón" para que sean apropiados. transmitir su propósito a las tecnologías de 
+            asistencia, como los lectores de pantalla.
+        </p>
+
+        <br>
+        <div class="particionesCentro">
+            <a class="btn btn-primary" href="#" role="button">Enlace</a>
+            <button class="btn btn-primary" type="submit">Botón</button>
+            <input class="btn btn-primary" type="button" value="Input">
+            <input class="btn btn-primary" type="submit" value="Submit">
+            <input class="btn btn-primary" type="reset" value="Reset">
+        </div>
+
+        <br>
+        <h4 id="btnEsquema">Botones de esquema</h4>
+        <p>¿Necesita un botón, pero no los fuertes colores de fondo que traen? Reemplazar el modificador predeterminado
+            clases con las .btn-outline-* para eliminar todas las imágenes y colores de fondo en cualquier botón.
+        </p>
+
+        <div class="particionesCentro">
+            <button type="button" class="btn btn-outline-primary">Primario</button>
+            <button type="button" class="btn btn-outline-secondary">Secundario</button>
+            <button type="button" class="btn btn-outline-success">Exitoso</button>
+            <button type="button" class="btn btn-outline-danger">Peligro</button>
+            <button type="button" class="btn btn-outline-warning">Precaución</button>
+            <button type="button" class="btn btn-outline-info">Info</button>
+            <button type="button" class="btn btn-outline-light">Luz</button>
+            <button type="button" class="btn btn-outline-dark">Obscuro</button>
+        </div>
+
+        <div class="particionesCentroTexto">
+            <p>Algunos de los estilos de botones usan un color de primer plano relativamente claro y solo 
+                deben usarse sobre un fondo oscuro para tener suficiente contraste.
+            </p>
+        </div>
+
+        <br>
+        <h4 id="tamanio">Tamaños</h4>
+        <p>¿Te apetece botones más grandes o más pequeños? Agregue .btn-lg o .btn-sm para tamaños adicionales.</p>
+
+        <div class="particionesCentro">
+            <button type="button" class="btn btn-primary btn-lg">Botón largo</button>
+            <button type="button" class="btn btn-secondary btn-lg">Botón largo</button>
+        </div>
+
+        <div class="particionesCentro">
+            <button type="button" class="btn btn-primary btn-sm">Botón pequeño</button>
+            <button type="button" class="btn btn-secondary btn-sm">Botón pequeño</button>
+        </div>
+
+        <br>
+        <h4 id="estadoDeshabilitado">Estado deshabilitado</h4>
+        <p>Haga que los botones parezcan inactivos agregando el atributo booleano deshabilitado a 
+            cualquier elemento < button>. Los botones deshabilitados tienen eventos de puntero: no 
+            se aplica ninguno, lo que evita que se disparen los estados activos y de desplazamiento.
+        </p>
+
+        <div class="particionesCentro">
+            <button type="button" class="btn btn-lg btn-primary" disabled>Botón primario</button>
+            <button type="button" class="btn btn-secondary btn-lg" disabled>Botón</button>
+        </div>
+
+        <br>
+        <p>Los botones deshabilitados que usan el elemento < a> se comportan un poco diferente:</p>
+        <ul>
+            <li>Los < a>s no admiten el atributo deshabilitado, por lo que debe agregar la clase .disabled para que aparezca visualmente deshabilitado.</li>
+            <li>Se incluyen algunos estilos amigables para el futuro para deshabilitar todos los eventos de puntero en los botones de anclaje.</li>
+            <li>Los botones deshabilitados que usan < a> deben incluir el atributo aria-disabled="true" para indicar el estado del elemento a las tecnologías de asistencia.</li>
+            <li>Disabled buttons using < a> should not include the href attribute.</li>
+        </ul>
+
+        <div class="particionesCentro">
+            <a class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">Enlace primario</a>
+            <a class="btn btn-secondary btn-lg disabled" role="button" aria-disabled="true">Enlace</a>
+        </div>
+
+        <br>
+        <h4 id="linkAdvertencia">Advertencia de funcionalidad de enlace</h4>
+        <p>Para cubrir los casos en los que debe mantener el atributo href en un enlace deshabilitado, la clase .disabled
+            usa pointer-events: none para intentar deshabilitar la funcionalidad de enlace de < a>s. Tenga en cuenta que este CSS
+            La propiedad aún no está estandarizada para HTML, pero todos los navegadores modernos la admiten. Además,
+            incluso en navegadores que admiten eventos de puntero: ninguno, la navegación del teclado no se ve afectada,
+            lo que significa que los usuarios de teclados videntes y los usuarios de tecnologías de asistencia aún podrán
+            activar estos enlaces. Entonces, para estar seguro, además de aria-disabled="true", también incluya un tabindex="-1"
+            atributo en estos enlaces para evitar que reciban el foco del teclado, y use JavaScript personalizado para deshabilitar
+            su funcionalidad por completo.
+        </p>
+
+        <div class="particionesCentro">
+            <a href="#" class="btn btn-primary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Enlace primario</a>
+            <a href="#" class="btn btn-secondary btn-lg disabled" tabindex="-1" role="button" aria-disabled="true">Enlace</a>
+        </div>
+
+        <br>
+        <h4 id="btnBloque">Botones de bloque</h4>
+        <p>Cree pilas receptivas de "botones de bloque" de ancho completo como los de Bootstrap 4 con una combinación de nuestros
+            utilidades de visualización y brecha. Al usar utilidades en lugar de clases específicas de botones, tenemos mucho más
+            control sobre el espaciado, la alineación y los comportamientos de respuesta.
+        </p>
+
+        <div class="particionesCentro">
+            <div class="d-grid gap-2">
+                <button class="btn btn-primary" type="button">Botón</button>
+                <button class="btn btn-primary" type="button">Botón</button>
+              </div>
+            </div>
+
+        <p>Aquí creamos una variación receptiva, comenzando con botones apilados verticalmente hasta el punto de 
+            interrupción md, donde .d-md-block reemplaza la clase .d-grid, anulando así la utilidad gap-2. Cambia 
+            el tamaño de tu navegador para verlos cambiar.
+        </p>
+
+        <div class="particionesCentro">
+            <div class="d-grid gap-2 d-md-block">
+                <button class="btn btn-primary" type="button">Botón</button>
+                <button class="btn btn-primary" type="button">Botón</button>
+              </div>
+            </div>
+
+        <p>Puede ajustar el ancho de sus botones de bloque con clases de ancho de columna de cuadrícula. Por ejemplo, 
+            para un "botón de bloque" de ancho medio, use .col-6. Céntrelo horizontalmente con .mx-auto también.
+        </p>
+
+        <div class="particionesCentro">
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-primary" type="button">Botón</button>
+                <button class="btn btn-primary" type="button">Botón</button>
+              </div>
+            </div>
+        <p>Se pueden usar utilidades adicionales para ajustar la alineación de los botones cuando están en posición 
+            horizontal. Aquí tomamos nuestro ejemplo de respuesta anterior y agregamos algunas utilidades flexibles y 
+            una utilidad de margen en el botón para alinear a la derecha los botones cuando ya no están apilados.
+        </p>
+
+        <div class="particionesCentro">
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-primary me-md-2" type="button">Botón</button>
+                <button class="btn btn-primary" type="button">Botón</button>
+              </div>
+            </div>
+
+        <br>
+        <h4 id="CompBtn">Complemento de botón</h4>
+        <p>El complemento de botón le permite crear botones simples de encendido/apagado.</p>
+        
+        <div class="particionesCentroTexto">
+            <p>Visualmente, estos botones de alternancia son idénticos a los botones de alternancia de las casillas de 
+                verificación. Sin embargo, las tecnologías de asistencia los transmiten de manera diferente: los lectores 
+                de pantalla anunciarán las casillas de verificación como "marcadas"/"no marcadas" (ya que, a pesar de su 
+                apariencia, siguen siendo fundamentalmente casillas de verificación), mientras que estos botones de alternancia 
+                se anunciarán como “botón”/“botón presionado”. La elección entre estos dos enfoques dependerá del tipo de alternancia 
+                que esté creando y de si la alternancia tendrá o no sentido para los usuarios cuando se anuncie como una casilla de 
+                verificación o como un botón real.
+            </p>
+        </div>
+
+        <br>
+        <h4 id="AlterarEstados">Alternar estados</h4>
+        <p>Agregue data-bs-toggle="button" para alternar el estado activo de un botón. Si está alternando previamente un botón, debe manualmente
+            agregue la clase .active <b>y</b> aria-pressed="true" para asegurarse de que se transmite adecuadamente a las tecnologías de asistencia.
+        </p>
+        
+        <div class="particionesCentro">
+            <button type="button" class="btn btn-primary" data-bs-toggle="button" autocomplete="off">Botón de activación</button>
+            <button type="button" class="btn btn-primary active" data-bs-toggle="button" autocomplete="off" aria-pressed="true">Botón de alternar activo</button>
+            <button type="button" class="btn btn-primary" disabled data-bs-toggle="button" autocomplete="off">Botón de alternancia deshabilitado</button>
+        </div>
+
+        <div class="particionesCentro">
+            <a href="#" class="btn btn-primary" role="button" data-bs-toggle="button">Enlace de activación</a>
+            <a href="#" class="btn btn-primary active" role="button" data-bs-toggle="button" aria-pressed="true">Enlace de alternar activo</a>
+            <a class="btn btn-primary disabled" aria-disabled="true" role="button" data-bs-toggle="button">Enlace de alternancia deshabilitado</a>
+        </div>
+    </section>
+    <br><br><br>
+
+    <!--PIE DE PÁGINA-->
+    <section class="piePagina">
+        
+        <div class="izquirdaPie">
+            <img src="/IMG/bootstrap-logo.png" width="10%">
+            <h6>Boostrap</h6>
+            <p style="font-size: small;">Diseñado y construido con todo el amor del mundo por el equipo de Bootstrap 
+                con la ayuda de nuestros colaboradores.
+                
+                Code licensed MIT, docs CC BY 3.0.
+                Currently v5.1.3.
+            </p>
+        </div>
+
+        <!--5-->
+        <div class="cincoFooter">
+            <ul>
+                <li class="list-group" style="color:black"><b>Comuidad</b></li>
+                <li class="list-group"><a class="nav-link" style="color:black" href="#">Asuntos</a></li>
+                <li class="list-group"><a class="nav-link" style="color:black" href="#">Discusiones</a></li>
+                <li class="list-group"><a class="nav-link" style="color:black" href="#">Patrocinadores corporativos</a></li>
+                <li class="list-group"><a class="nav-link" style="color:black" href="#">Colectivo Abierto</a></li>
+                <li class="list-group"><a class="nav-link" style="color:black" href="#">Slack</a></li>
+                <li class="list-group"><a class="nav-link" style="color:black" href="#">Stack Overflow</a></li>           
+            </ul>
+        </div>
+
+         <!--4-->
+         <div class="cuartoFooter">
+            <ul> 
+                <li class="list-group" style="color:black"><b>Proyectos</b></li>  
+                <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Boostrap 5</a></li>    
+                <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Boostrap 4</a></li>    
+                <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Icons</a></li>    
+                <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">RFS</a></li>             
+                <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Empezar npm</a></li>    
+            </ul>
+        </div>
+
+        <!--3-->
+        <div class="tecerFooter">
+            <ul>
+                <li class="list-group" style="color:black"><b>Guias</b></li>
+                <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Empezar</a></li>  
+                <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Plantilla de inicio</a></li>  
+                <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Paquete web</a></li>  
+                <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">paquete</a></li>  
+            </ul>
+        </div>
+
+        <!--2-->
+        <div class="segundaFooter">
+            <ul>
+                <li class="list-group" style="color:black"><b>Links</b></li>
+                <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Casa</a></li>  
+                <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Documentos</a></li>  
+                <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Ejemplos</a></li>  
+                <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Temas</a></li>  
+                <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Blog</a></li>  
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Practica Boostrap</title>
+    <link rel="stylesheet" href="/CSS/styleCarrusel.css">
+    <link rel="icon" href="/IMG/bootstrap-logo.png">
+    <!--Boostrap-->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <!--Menu superior-->
+    <section class="bordeMenu">
+        <ul class="nav">
+            <li>
+                <img src="/IMG/bootstrap-logo.png" width="50px">
+            </li>
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" style="color:white" href="#">Casa</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#" style="color:white">Docs</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#" style="color:white">Ejemplos</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#" style="color:white">Iconos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color:white">Temas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color:white">Blog</a>
+            </li>
+        
+        <div class="derechaMenu">
+            <a href="https://github.com/twbs" style="color:rgb(203, 152, 251)">
+                <svg xmlns="http://www.w3.org/2000/svg" style="color:black" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+            </a>
+            <a href="https://twitter.com/getbootstrap" style="color:rgb(203, 152, 251)">
+                <svg xmlns="http://www.w3.org/2000/svg" style="color:black" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                </svg>
+            </a>
+            <a href="https://bootstrap-slack.herokuapp.com/" style="color:rgb(203, 152, 251)">
+                <svg xmlns="http://www.w3.org/2000/svg" style="color:black" width="16" height="16" fill="currentColor" class="bi bi-hash" viewBox="0 0 16 16">
+                    <path d="M8.39 12.648a1.32 1.32 0 0 0-.015.18c0 .305.21.508.5.508.266 0 .492-.172.555-.477l.554-2.703h1.204c.421 0 .617-.234.617-.547 0-.312-.188-.53-.617-.53h-.985l.516-2.524h1.265c.43 0 .618-.227.618-.547 0-.313-.188-.524-.618-.524h-1.046l.476-2.304a1.06 1.06 0 0 0 .016-.164.51.51 0 0 0-.516-.516.54.54 0 0 0-.539.43l-.523 2.554H7.617l.477-2.304c.008-.04.015-.118.015-.164a.512.512 0 0 0-.523-.516.539.539 0 0 0-.531.43L6.53 5.484H5.414c-.43 0-.617.22-.617.532 0 .312.187.539.617.539h.906l-.515 2.523H4.609c-.421 0-.609.219-.609.531 0 .313.188.547.61.547h.976l-.516 2.492c-.008.04-.015.125-.015.18 0 .305.21.508.5.508.265 0 .492-.172.554-.477l.555-2.703h2.242l-.515 2.492zm-1-6.109h2.266l-.515 2.563H6.859l.532-2.563z"/>
+                </svg>
+            </a>
+            <a href="https://opencollective.com/bootstrap" style="color:rgb(203, 152, 251)">
+                <svg xmlns="http://www.w3.org/2000/svg" style="color:black" width="16" height="16" fill="currentColor" class="bi bi-record-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                </svg>
+            </a>
+            <button type="button" class="btn btn-outline-warning">Descargar</button>
+        </div>
+        </ul>
+    </section>
+
+    <!--Sección de abajo del menu-->
+    <section class="menuBajoMenu">
+        <!--Buscador de la izquierda-->
+        <nav class="navbar navbar-light">
+            <div class="container-fluid">
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Control+/</button>
+            </form>
+            
+            <!--Boton de la derecha-->
+            <form class="d-flex">
+              <div class="btn-group" role="group" >
+                <button id="btnGroupDrop1" type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Boostrap v5.1</button>
+                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <li><a class="dropdown-item" href="#">Ultima (5.1.x)</a></li>
+                  <li><a class="dropdown-item" href="#">v4.6.x</a></li>
+                  <li><a class="dropdown-item" href="#">v3.4.1</a></li>
+                  <li><a class="dropdown-item" href="#">v2.3.2</a></li>
+                </ul>
+              </div>
+            </form>
+            </div> 
+          </nav>
+    </section>
+
+    <!--menu de la izquierda-->
+    <aside class="izquierdaMenu sticky-top">
+        <div class="btn-group" role="button" >
+            <li id="btnGroupDrop1"  class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Componentes</li>
+            <ul class="dropdown-menu list-group-flush">
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/index.html">Botones</a></li><!--si.les falta un poco-->
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/navsAndTabs.html">Navegadores y pestañas</a></li><!--si con errores-->
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/cargadores.html">Cargadores</a></li><!--si con errores-->
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/progreso.html">Progreso</a></li><!--si con errores-->
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/modal.html">Modal</a></li> <!--si con errores-->
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/desplegables.html">Desplegable</a></li> <!--si con errores-->
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/navRecientes.html">Navegadores Recientes</a></li> <!--si con errores-->
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/badejEntr.html">Bandeja de Entrada</a></li> <!--si con errores-->
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/carrusel.html">Carrusel</a></li>
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/listaDeGrupos.html">Lista de grupos</a></li>
+              </ul>
+        </div>
+    </aside>
+
+    <!--El recuardo de la derecha-->
+    <aside class="derechaAside sticky-top">
+        <ul>
+            <li class="list-group nav-link" style="color:rgb(110, 110, 110)"><u>En esta pagina</u></li>
+            <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110)" href="#comofun">¿Cómo funciona?</a></li>
+            <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110)" href="#ejem">Ejemplos</a></li>
+            <ul>
+                <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110)" href="#solDiap">Solo diapositivas</a></li>
+                <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110)" href="#conContrls">Con controles</a></li>
+                <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110)" href="#conIndic">Con indicadores</a></li>
+                <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110)" href="#conSubt">Con subtítulos</a></li>
+                <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110)" href="#fundCrz">Fundido cruzado</a></li>
+                <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110)" href="#intElmCarInd">Intervalo de elemento de<br>carrusel individual</a></li>
+                <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110)" href="#desTactil">Desactivar deslizamiento táctil</a></li>
+            </ul>
+            <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110)" href="#varObs">Variante obscura</a></li>
+            <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110) " href="#transPerson">Transición personalizada</a></li>  
+        </ul>
+    </aside>
+
+    <!--Aqui termina la base de la página-->
+
+    <!--carrusel-->
+    <section class="infCentro">
+        <h2>Carrusel</h2>
+        <p>Un componente de presentación de diapositivas para recorrer elementos (imágenes o diapositivas de texto) como un carrusel.</p>
+
+        <br>
+        <h4 id="comofun">¿Cómo funciona?</h4>
+        <p>El carrusel es una presentación de diapositivas para recorrer una serie de contenido, creado con transformaciones 
+            CSS 3D y un poco de JavaScript. Funciona con una serie de imágenes, texto o marcas personalizadas. También incluye 
+            soporte para controles e indicadores anteriores/siguientes.
+
+            En los navegadores en los que se admite la API de visibilidad de página, el carrusel evitará que se deslice cuando 
+            la página web no esté visible para el usuario (como cuando la pestaña del navegador está inactiva, la ventana del 
+            navegador está minimizada, etc.).
+        </p>
+        <div class="particionesCentroTexto">
+            <p>El efecto de animación de este componente depende de la consulta de medios de movimiento reducido preferido. 
+                Consulte la sección de movimiento reducido de nuestra documentación de accesibilidad.
+            </p>
+        </div>
+        <p>
+            Tenga en cuenta que los carruseles anidados no son compatibles y, por lo general, los carruseles no cumplen con los 
+            estándares de accesibilidad.
+        </p>
+
+        <br>
+        <h4 id="ejem">Ejemplos</h4>
+        <p>Los carruseles no normalizan automáticamente las dimensiones de las diapositivas. Como tal, es posible que deba usar 
+            utilidades adicionales o estilos personalizados para dimensionar el contenido de manera adecuada. Si bien los 
+            carruseles admiten controles e indicadores anteriores/siguientes, no se requieren explícitamente. Agregue y 
+            personalice como mejor le parezca.
+            <br>
+           <b>La clase .active debe agregarse a una de las diapositivas</b> de lo contrario, el carrusel no será visible. También 
+            asegúrese de establecer una identificación única en el .carrusel para controles opcionales, especialmente si está 
+            utilizando varios carruseles en una sola página. Los elementos de control e indicadores deben tener un atributo 
+            data-bs-target (o href para enlaces) que coincida con la identificación del elemento .carousel.
+        </p>
+
+        <br>
+        <h4 id="solDiap">Solo diapositivas</h4>
+        <p>Aquí hay un carrusel solo con diapositivas. Tenga en cuenta la presencia de .d-block y .w-100 en las imágenes de 
+            carrusel para evitar la alineación de imágenes predeterminada del navegador.
+        </p>
+        <div class="particionesCentro">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/IMG/homero.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/IMG/homero.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/IMG/homero.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <br>
+        <h4 id="conContrls">Con controles</h4>
+        <p>Agregar los controles anterior y siguiente. Recomendamos usar elementos < button>, pero también puede usar elementos 
+            < a> con role="button".</p>
+        <div class="particionesCentro">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/IMG/homero.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/IMG/homero.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/IMG/homero.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+
+        <br>
+        <h4 id="conIndic">Con indicadores</h4>
+        <p>También puede agregar los indicadores al carrusel, junto con los controles.</p>
+        <div class="particionesCentro">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/IMG/homero.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/IMG/homero.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/IMG/homero.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previo</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">siguiente</span>
+                </button>
+              </div>
+        </div>
+
+        <br>
+        <h4 id="conSubt">Con subtítulos</h4>
+        <p>Agregue subtítulos a sus diapositivas fácilmente con el elemento .carousel-caption dentro de cualquier elemento 
+            .carousel. Se pueden ocultar fácilmente en ventanas de visualización más pequeñas, como se muestra a continuación, 
+            con utilidades de visualización opcionales. Los ocultamos inicialmente con .d-none y los recuperamos en dispositivos 
+            medianos con .d-md-block.
+        </p>
+        <div class="particionesCentro">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/IMG/homero.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Etiqueta de la primera diapositiva</h5>
+                      <p>Algún contenido de marcador de posición representativo para la primera diapositiva.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/IMG/homero.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Etiqueta de la segunda diapositiva</h5>
+                      <p>Algún contenido de marcador de posición representativo para la segunda diapositiva.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/IMG/homero.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Etiqueta de la tercera diapositiva</h5>
+                      <p>Algo de contenido de marcador de posición representativo para la tercera diapositiva.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previo</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">siguiente</span>
+                </button>
+              </div>
+        </div>
+
+        <br>
+        <h4 id="fundCrz">Fundido cruzado</h4>
+        <p>Agregue .carousel-fade a su carrusel para animar diapositivas con una transición de fundido en lugar de una diapositiva.</p>
+        <div class="particionesCentro">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/IMG/homero.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/IMG/homero.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/IMG/homero.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+
+        <br>
+        <h4 id="intElmCarInd">Intervalo de elemento de carrusel individual</h4>
+        <p>Agregue data-bs-interval="" a un .carousel-item para cambiar la cantidad de tiempo de retraso entre el ciclo 
+            automático al siguiente elemento.
+        </p>
+        <div class="particionesCentro">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="/IMG/homero.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="/IMG/homero.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/IMG/homero.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previo</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+        </div>
+    
+        <br>
+        <h4 id="desTactil">Desactivar deslizamiento táctil</h4>
+        <p>Los carruseles admiten deslizar hacia la izquierda o hacia la derecha en dispositivos con pantalla táctil para moverse 
+            entre diapositivas. Esto se puede deshabilitar usando el atributo data-bs-touch. El siguiente ejemplo tampoco incluye 
+            el atributo data-bs-ride y tiene data-bs-interval="false", por lo que no se reproduce automáticamente.
+        </p>
+        <div class="particionesCentro">
+            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/IMG/homero.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/IMG/homero.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/IMG/homero.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previo</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguientes</span>
+                </button>
+              </div>
+        </div>
+
+        <br>
+        <h4 id="varObs">Variante obscura</h4>
+        <p>Agregue .carousel-dark al .carousel para controles, indicadores y subtítulos más oscuros. Los controles se han invertido 
+            de su relleno blanco predeterminado con la propiedad CSS de filtro. Los subtítulos y los controles tienen variables Sass 
+            adicionales que personalizan el color y el color de fondo.
+        </p>
+        <div class="particionesCentro">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="/IMG/homero.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Etiqueta de la primera diapositiva</h5>
+                      <p>Algún contenido de marcador de posición representativo para la primera diapositiva.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="/IMG/homero.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Etiqueta de la segunda diapositiva</h5>
+                      <p>Algún contenido de marcador de posición representativo para la segunda diapositiva.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/IMG/homero.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Etiqueta de la tercera diapositiva</h5>
+                      <p>Algo de contenido de marcador de posición representativo para la tercera diapositiva.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previo</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+        </div>
+
+        <br>
+        <h4 id="transPerson">Transición personalizada</h4>
+        <p>La duración de la transición de .carousel-item se puede cambiar con la variable Sass $carousel-transition-duration antes 
+            de compilar o estilos personalizados si está utilizando el CSS compilado. Si se aplican varias transiciones, asegúrese 
+            de definir primero la transición de transformación (p. ej., transición: facilidad de transformación 2 s, opacidad 0,5 s 
+            desaceleración).
+        </p>
+    </section>
+    <br><br><br>
+
+    <!--PIE DE PÁGINA-->
+    <section class="piePagina">
+        
+        <div class="izquirdaPie">
+            <img src="/IMG/bootstrap-logo.png" width="10%">
+            <h6>Boostrap</h6>
+            <p style="font-size: small;">Diseñado y construido con todo el amor del mundo por el equipo de Bootstrap 
+                con la ayuda de nuestros colaboradores.
+                
+                Code licensed MIT, docs CC BY 3.0.
+                Currently v5.1.3.
+            </p>
+        </div>
+
+        <!--5-->
+        <div class="cincoFooter">
+            <ul>
+                <li class="list-group" style="color:black"><b>Comuidad</b></li>
+                <li class="list-group"><a class="nav-link" style="color:black" href="#">Asuntos</a></li>
+                <li class="list-group"><a class="nav-link" style="color:black" href="#">Discusiones</a></li>
+                <li class="list-group"><a class="nav-link" style="color:black" href="#">Patrocinadores corporativos</a></li>
+                <li class="list-group"><a class="nav-link" style="color:black" href="#">Colectivo Abierto</a></li>
+                <li class="list-group"><a class="nav-link" style="color:black" href="#">Slack</a></li>
+                <li class="list-group"><a class="nav-link" style="color:black" href="#">Stack Overflow</a></li>           
+            </ul>
+        </div>
+
+         <!--4-->
+         <div class="cuartoFooter">
+            <ul> 
+                <li class="list-group" style="color:black"><b>Proyectos</b></li>  
+                <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Boostrap 5</a></li>    
+                <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Boostrap 4</a></li>    
+                <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Icons</a></li>    
+                <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">RFS</a></li>             
+                <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Empezar npm</a></li>    
+            </ul>
+        </div>
+
+        <!--3-->
+        <div class="tecerFooter">
+            <ul>
+                <li class="list-group" style="color:black"><b>Guias</b></li>
+                <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Empezar</a></li>  
+                <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Plantilla de inicio</a></li>  
+                <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Paquete web</a></li>  
+                <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">paquete</a></li>  
+            </ul>
+        </div>
+
+        <!--2-->
+        <div class="segundaFooter">
+            <ul>
+                <li class="list-group" style="color:black"><b>Links</b></li>
+                <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Casa</a></li>  
+                <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Documentos</a></li>  
+                <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Ejemplos</a></li>  
+                <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Temas</a></li>  
+                <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Blog</a></li>  
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

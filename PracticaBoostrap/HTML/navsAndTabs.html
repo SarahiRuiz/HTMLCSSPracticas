@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Practica Boostrap</title>
+    <link rel="stylesheet" href="/CSS/styleNavsTabs.css">
+    <link rel="icon" href="/IMG/bootstrap-logo.png">
+    <!--Boostrap-->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <!--Menu superior-->
+    <section class="bordeMenu">
+        <ul class="nav">
+            <li>
+                <img src="/IMG/bootstrap-logo.png" width="50px">
+            </li>
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" style="color:white" href="#">Casa</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#" style="color:white">Docs</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#" style="color:white">Ejemplos</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#" style="color:white">Iconos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color:white">Temas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" style="color:white">Blog</a>
+            </li>
+        
+        <div class="derechaMenu">
+            <a href="https://github.com/twbs" style="color:rgb(203, 152, 251)">
+                <svg xmlns="http://www.w3.org/2000/svg" style="color:black" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                </svg>
+            </a>
+            <a href="https://twitter.com/getbootstrap" style="color:rgb(203, 152, 251)">
+                <svg xmlns="http://www.w3.org/2000/svg" style="color:black" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                </svg>
+            </a>
+            <a href="https://bootstrap-slack.herokuapp.com/" style="color:rgb(203, 152, 251)">
+                <svg xmlns="http://www.w3.org/2000/svg" style="color:black" width="16" height="16" fill="currentColor" class="bi bi-hash" viewBox="0 0 16 16">
+                    <path d="M8.39 12.648a1.32 1.32 0 0 0-.015.18c0 .305.21.508.5.508.266 0 .492-.172.555-.477l.554-2.703h1.204c.421 0 .617-.234.617-.547 0-.312-.188-.53-.617-.53h-.985l.516-2.524h1.265c.43 0 .618-.227.618-.547 0-.313-.188-.524-.618-.524h-1.046l.476-2.304a1.06 1.06 0 0 0 .016-.164.51.51 0 0 0-.516-.516.54.54 0 0 0-.539.43l-.523 2.554H7.617l.477-2.304c.008-.04.015-.118.015-.164a.512.512 0 0 0-.523-.516.539.539 0 0 0-.531.43L6.53 5.484H5.414c-.43 0-.617.22-.617.532 0 .312.187.539.617.539h.906l-.515 2.523H4.609c-.421 0-.609.219-.609.531 0 .313.188.547.61.547h.976l-.516 2.492c-.008.04-.015.125-.015.18 0 .305.21.508.5.508.265 0 .492-.172.554-.477l.555-2.703h2.242l-.515 2.492zm-1-6.109h2.266l-.515 2.563H6.859l.532-2.563z"/>
+                </svg>
+            </a>
+            <a href="https://opencollective.com/bootstrap" style="color:rgb(203, 152, 251)">
+                <svg xmlns="http://www.w3.org/2000/svg" style="color:black" width="16" height="16" fill="currentColor" class="bi bi-record-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                </svg>
+            </a>
+            <button type="button" class="btn btn-outline-warning">Descargar</button>
+        </div>
+        </ul>
+    </section>
+
+    <!--Sección de abajo del menu-->
+    <section class="menuBajoMenu">
+        <!--Buscador de la izquierda-->
+        <nav class="navbar navbar-light">
+            <div class="container-fluid">
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Control+/</button>
+            </form>
+            
+            <!--Boton de la derecha-->
+            <form class="d-flex">
+              <div class="btn-group" role="group" >
+                <button id="btnGroupDrop1" type="button" class="btn btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Boostrap v5.1</button>
+                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <li><a class="dropdown-item" href="#">Ultima (5.1.x)</a></li>
+                  <li><a class="dropdown-item" href="#">v4.6.x</a></li>
+                  <li><a class="dropdown-item" href="#">v3.4.1</a></li>
+                  <li><a class="dropdown-item" href="#">v2.3.2</a></li>
+                </ul>
+              </div>
+            </form>
+            </div> 
+          </nav>
+    </section>
+
+    <!--menu de la izquierda-->
+    <aside class="izquierdaMenu sticky-top">
+        <div class="btn-group" role="button" >
+            <li id="btnGroupDrop1"  class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Componentes</li>
+            <ul class="dropdown-menu list-group-flush">
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/index.html">Botones</a></li><!--si.les falta un poco-->
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/navsAndTabs.html">Navegadores y pestañas</a></li><!---->
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/cargadores.html">Cargadores</a></li>
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/progreso.html">Progreso</a></li>
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/modal.html">Modal</a></li>
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/desplegables.html">Desplegable</a></li>
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/navRecientes.html">Navegadores Recientes</a></li>
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/badejEntr.html">Bandeja de Entrada</a></li>
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/carrusel.html">Marcadores de Posición</a></li>
+                <li class="list-group-item"><a class="nav-link" style="color:black" href="/HTML/listaDeGrupos.html">Fuera del lienzo</a></li>
+              </ul>
+        </div>
+    </aside>
+
+    <!--El recuardo de la derecha-->
+    <aside class="derechaAside sticky-top">
+        <ul>
+            <li class="list-group nav-link" style="color:rgb(110, 110, 110)"><u>En esta pagina</u></li>
+            <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110)" href="#baseNav">Naveación base</a></li>
+            <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110)" href="#EstilosDis">Estilo Disponible</a></li>
+            <ul>
+              <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110)" href="#altHoriz">Alineación horizontal</a></li>
+              <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110)" href="#vertical">Vertical</a></li>
+              <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110)" href="#Pestanias">Pestañas</a></li>
+              <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110)" href="#pastillas">Pastillas</a></li>
+              <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110)" href="#llenayjustifica">Llenar y justificar</a></li>
+            </ul>
+            <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110)" href="#utilidadesflex">Trabajando con utilidades flexibles</a></li>
+            <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110) " href="#acces">En cuanto a la accesibilidad</a></li>
+            <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110) " href="#usoDesp">Uso de desplegables</a></li>
+            <ul>
+              <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110) " href="#menuDesp">Menu Desplegable</a></li>
+              <li class="list-group"><a class="nav-link" style="color:rgb(110, 110, 110) " href="#pestmenudespl">Pestañas con menús desplegables</a></li>
+            </ul>
+          </ul>
+    </aside>
+    <!--Aqui termina la base de la página-->
+
+    <!--Navs and Tabs-->
+    <section class="infCentro">
+        <h2>Navegación y pestañas</h2>
+        <p>Documentación y ejemplos sobre cómo usar los componentes de navegación incluidos de Bootstrap.</p>
+        
+        <br>
+        <h4 id="baseNav">Navegación base</h4>
+        <p>La navegación disponible en Bootstrap comparte marcas y estilos generales, desde la clase base .nav 
+            hasta los estados activo y deshabilitado. Cambia las clases de modificadores para cambiar entre cada estilo.
+
+            El componente base .nav está construido con flexbox y proporciona una base sólida para construir todo tipo 
+            de componentes de navegación. Incluye algunas anulaciones de estilo (para trabajar con listas), algo de relleno 
+            de enlaces para áreas de acceso más grandes y estilo básico deshabilitado.
+        </p>
+        <div class="particionesCentroTexto">
+            <p>El componente base .nav no incluye ningún estado .active. Los siguientes ejemplos incluyen la clase, principalmente 
+                para demostrar que esta clase en particular no activa ningún estilo especial.
+
+                Para transmitir el estado activo a las tecnologías de asistencia, use el atributo aria-current: use el valor de 
+                página para la página actual o verdadero para el elemento actual en un conjunto.
+            </p>
+        </div>
+        <div class="particionesCentro">
+            <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Activo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Enlace</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Enlace</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Discapacitado</a>
+                </li>
+              </ul>
+        </div>
+        <p>Las clases se utilizan en todo momento, por lo que su marcado puede ser súper flexible. Use < ul> como arriba, 
+            < ol> si el orden de sus elementos es importante, o arroje el suyo propio con un elemento < nav>. Debido a que 
+                .nav usa display: flex, los enlaces de navegación se comportan igual que los elementos de navegación, pero 
+                sin el marcado adicional.
+        </p>
+        <div class="particionesCentro">
+            <nav class="nav">
+                <a class="nav-link active" aria-current="page" href="#">Activo</a>
+                <a class="nav-link" href="#">Enlace</a>
+                <a class="nav-link" href="#">Enlace</a>
+                <a class="nav-link disabled">Discapacitado</a>
+              </nav>
+        </div>
+
+        <br>
+        <h4 id="EstilosDis">Estilos disponibles</h4>
+        <p>Cambie el estilo del componente .navs con modificadores y utilidades. Mezcle y combine según sea necesario, o construya el suyo propio.</p>
+
+        <br>
+        <h4 id="altHoriz">Alineación horizontal</h4>
+        <p>Cambie la alineación horizontal de su navegador con las utilidades flexbox. De forma predeterminada, los navegadores están alineados a la izquierda, pero puede
+          cámbielos fácilmente al centro o alineados a la derecha.
+
+          Centrado con .justify-content-center:
+        </p>
+        <div class="particionesCentro">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Activo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Enlace</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Enlace</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Discapacitado</a>
+                </li>
+              </ul>
+        </div>
+        <p>Alineado a la derecha con .justify-content-end:</p>
+        <div class="particionesCentro">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Activo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Enlace</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Enlace</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Discapacitado</a>
+                </li>
+              </ul>
+        </div>
+
+        <br>
+        <h4 id="vertical">Vertical</h4>
+        <p>Apila tu navegación cambiando la dirección del elemento flexible con la utilidad .flex-column. 
+            ¿Necesita apilarlos en algunas ventanas gráficas pero no en otras? Use las versiones receptivas 
+            (por ejemplo, .flex-sm-column).
+        </p>
+        <div class="particionesCentro">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Activo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Enlace</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Enlace</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Discapacitado</a>
+                </li>
+              </ul>
+        </div>
+        <p>Como siempre, la navegación vertical también es posible sin < ul>.</p>
+        <div class="particionesCentro">
+            <nav class="nav flex-column">
+                <a class="nav-link active" aria-current="page" href="#">Active</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link disabled">Disabled</a>
+              </nav>
+        </div>
+
+        <br>
+        <h4 id="Pestanias">Pestañas</h4>
+        <p>Toma la navegación básica de arriba y agrega la clase .nav-tabs para generar una interfaz con pestañas. 
+            Úselos para crear regiones tabulables con nuestro complemento JavaScript de pestañas.
+        </p>
+        <div class="particionesCentro">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Activo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Enalce</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Enlace</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Discapacitado</a>
+                </li>
+              </ul>
+        </div>
+
+        <br>
+        <h4 id="pastillas">Pastillas</h4>
+        <p>Tome ese mismo HTML, pero use .nav-pills en su lugar:</p>
+        <div class="particionesCentro">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Activo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Enlace</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Enlace</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Discapacitado</a>
+                </li>
+              </ul>
+        </div>
+
+        <br>
+        <h4 id="llenayjustifica">Llenar y justificar</h4>
+        <p>Fuerce el contenido de su .nav para extender el ancho total disponible en una de las dos clases de 
+            modificadores. Para llenar proporcionalmente todo el espacio disponible con sus elementos .nav, use 
+            .nav-fill. Observe que todo el espacio horizontal está ocupado, pero no todos los elementos de navegación 
+            tienen el mismo ancho.
+        </p>
+        <div class="particionesCentro">
+            <ul class="nav nav-pills nav-fill">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Activo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Enlace de navegación mucho más largo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Enlace</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Discapacitado</a>
+                </li>
+              </ul>
+        </div>
+        <p>Fuerce el contenido de su .nav para extender el ancho total disponible en una de las dos clases de modificadores. 
+            Para llenar proporcionalmente todo el espacio disponible con sus elementos .nav, use .nav-fill. Observe que todo 
+            el espacio horizontal está ocupado, pero no todos los elementos de navegación tienen el mismo ancho.
+         </p>
+         <div class="particionesCentro">
+            <nav class="nav nav-pills nav-fill">
+                <a class="nav-link active" aria-current="page" href="#">Activo</a>
+                <a class="nav-link" href="#">Enlace de navegación mucho más largo</a>
+                <a class="nav-link" href="#">Enlace</a>
+                <a class="nav-link disabled">Discapacitado</a>
+              </nav>
+         </div>
+         <p>Para elementos de igual ancho, use .nav-justified. Todo el espacio horizontal estará ocupado por enlaces de 
+             navegación, pero a diferencia del .nav-fill anterior, cada elemento de navegación tendrá el mismo ancho.
+        </p>
+        <div class="particionesCentro">
+            <ul class="nav nav-pills nav-justified">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Activo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Enlace de navegación mucho más largo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Enlace</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Discapacitado</a>
+                </li>
+              </ul>
+        </div>
+        <p>Similar al ejemplo de .nav-fill utilizando una navegación basada en <nav>.</p>
+        <div class="particionesCentro">
+            <nav class="nav nav-pills nav-justified">
+                <a class="nav-link active" aria-current="page" href="#">Activo</a>
+                <a class="nav-link" href="#">Enlace de navegación mucho más largo</a>
+                <a class="nav-link" href="#">Enlace</a>
+                <a class="nav-link disabled">Discapacitado</a>
+              </nav>
+        </div>
+
+        <br>
+        <h4 id="utilidadesflex">Trabajando con utilidades flexibles</h4>
+        <p>Si necesita variaciones de navegación receptivas, considere usar una serie de utilidades de flexbox. Mientras más detallado,
+          estas utilidades ofrecen una mayor personalización en los puntos de interrupción receptivos. En el siguiente ejemplo, nuestra navegación
+          se apilará en el punto de interrupción más bajo, luego se adaptará a un diseño horizontal que llene el ancho disponible
+          a partir del pequeño punto de ruptura.
+        </p>
+        <div class="particionesCentro">
+            <nav class="nav nav-pills flex-column flex-sm-row">
+                <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="#">Activo</a>
+                <a class="flex-sm-fill text-sm-center nav-link" href="#">Enlace de navegación mucho más largo</a>
+                <a class="flex-sm-fill text-sm-center nav-link" href="#">Enlace</a>
+                <a class="flex-sm-fill text-sm-center nav-link disabled">Discapacitado</a>
+              </nav>
+        </div>
+
+        <br>
+        <h4 id="acces">En cuanto a la accesibilidad</h4>
+        <p>Si está utilizando navs para proporcionar una barra de navegación, asegúrese de agregar un rol="navegación" al 
+            contenedor principal más lógico de < ul>, o ajuste un elemento < nav> alrededor de toda la navegación. No agregue 
+            el rol al propio < ul>, ya que esto evitaría que las tecnologías de asistencia lo anuncien como una lista real.
+
+            Tenga en cuenta que las barras de navegación, incluso si tienen un estilo visual como pestañas con la clase .nav-tabs, 
+            no deben recibir los atributos role="tablist", role="tab" o role="tabpanel". Estos solo son apropiados para interfaces 
+            con pestañas dinámicas, como se describe en las Prácticas de creación de ARIA de WAI. Consulte el comportamiento de 
+            JavaScript para interfaces con pestañas dinámicas en esta sección para ver un ejemplo. El atributo aria-current no es 
+            necesario en las interfaces con pestañas dinámicas ya que nuestro JavaScript maneja el estado seleccionado agregando 
+            aria-selected="true" en la pestaña activa.
+        </p>
+
+        <br>
+        <h4 id="usoDesp">Uso de desplegables</h4>
+        <p>Add dropdown menus with a little extra HTML and the dropdowns JavaScript plugin.</p>
+
+        <br>
+        <h4 id="menuDesp">Menu desplegable</h4>
+        <p>Add dropdown menus with a little extra HTML and the dropdowns JavaScript plugin.</p>
+
+        <br>
+        <h4 id="pestmenudespl">Pestañas con menús desplegables</h4>
+        <div class="particionesCentro">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Activo</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Desplegable</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Acción</a></li>
+                    <li><a class="dropdown-item" href="#">Otra Acción</a></li>
+                    <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Enlace separado</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Enlace</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Discapacitado</a>
+                </li>
+              </ul>
+        </div>
+    </section>
+    <br><br><br>
+
+     <!--PIE DE PÁGINA-->
+     <section class="piePagina">
+        
+      <div class="izquirdaPie">
+          <img src="/IMG/bootstrap-logo.png" width="10%">
+          <h6>Boostrap</h6>
+          <p style="font-size: small;">Diseñado y construido con todo el amor del mundo por el equipo de Bootstrap 
+              con la ayuda de nuestros colaboradores.
+              
+              Code licensed MIT, docs CC BY 3.0.
+              Currently v5.1.3.
+          </p>
+      </div>
+
+      <!--5-->
+      <div class="cincoFooter">
+          <ul>
+              <li class="list-group" style="color:black"><b>Comuidad</b></li>
+              <li class="list-group"><a class="nav-link" style="color:black" href="#">Asuntos</a></li>
+              <li class="list-group"><a class="nav-link" style="color:black" href="#">Discusiones</a></li>
+              <li class="list-group"><a class="nav-link" style="color:black" href="#">Patrocinadores corporativos</a></li>
+              <li class="list-group"><a class="nav-link" style="color:black" href="#">Colectivo Abierto</a></li>
+              <li class="list-group"><a class="nav-link" style="color:black" href="#">Slack</a></li>
+              <li class="list-group"><a class="nav-link" style="color:black" href="#">Stack Overflow</a></li>           
+          </ul>
+      </div>
+
+       <!--4-->
+       <div class="cuartoFooter">
+          <ul> 
+              <li class="list-group" style="color:black"><b>Proyectos</b></li>  
+              <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Boostrap 5</a></li>    
+              <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Boostrap 4</a></li>    
+              <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Icons</a></li>    
+              <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">RFS</a></li>             
+              <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Empezar npm</a></li>    
+          </ul>
+      </div>
+
+      <!--3-->
+      <div class="tecerFooter">
+          <ul>
+              <li class="list-group" style="color:black"><b>Guias</b></li>
+              <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Empezar</a></li>  
+              <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Plantilla de inicio</a></li>  
+              <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Paquete web</a></li>  
+              <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">paquete</a></li>  
+          </ul>
+      </div>
+
+      <!--2-->
+      <div class="segundaFooter">
+          <ul>
+              <li class="list-group" style="color:black"><b>Links</b></li>
+              <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Casa</a></li>  
+              <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Documentos</a></li>  
+              <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Ejemplos</a></li>  
+              <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Temas</a></li>  
+              <li class="list-group" style="color:black"><a class="nav-link" style="color:black" href="#">Blog</a></li>  
+          </ul>
+      </div>
+  </section>
+</body>
+</html>
