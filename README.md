@@ -1,2 +1,2 @@
-# practica1_fdp
-Practica 1 de Fundamentos de Programación
+# HTML Y CSS
+Practica de HTML que he ido creando con el tiempo.
