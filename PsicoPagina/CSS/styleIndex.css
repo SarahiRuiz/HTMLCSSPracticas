@@ -1,0 +1,82 @@
+body{
+    background-image: url(/IMG/fondo.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.colorLetras{
+    color:#1471B7;
+}
+
+/*Menu superior*/
+.imgenLogo{
+    margin-top: 10px;
+    margin-left: 50px;
+    float: left;
+}
+
+/*Laterales*/
+.asideDerecha{
+    float: right;
+    width: 20%;
+    margin-right: 30px;
+    margin-top: 30px;
+    color: #1471B7;
+    border-top: solid  4px #1471B7;
+    border-right: solid  4px #1471B7;
+    background: linear-gradient(to left,#C5E5EF, white);
+}
+
+.asideIzquieda{
+    float: left;
+    width: 25%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.caja{
+    border: solid  8px #1471B7;
+    margin: 20px;
+    padding: 0.5em;
+    border-radius:1em;
+}
+
+.titulo{
+    font-size:70px;
+    text-shadow: -5px 5px #6BC1B6;
+}
+
+.tituloAbajo{
+    float: right;
+    font-size: 100px; 
+    /*el primer numero es para moverlo a la izquierda y segundo numero es para bajarlo*/
+    text-shadow: -5px 5px #6BC1B6;
+}
+
+.vode{
+    border: solid  4px transparent;
+}
+
+/*Aquí empieza la información del centro*/
+.infoCentral{
+    margin-top: 1em;
+    margin-left: 28%;
+    margin-right: 25%;
+    height: 500px;
+}
+
+.bordeCentral{
+    border: dashed 2px #1471B7;
+    height: 100px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.botonTemas{
+    background-color: #C5E5EF;
+    color: #1471B7;
+    margin-left: 10px;
+    width: 45%;
+}
